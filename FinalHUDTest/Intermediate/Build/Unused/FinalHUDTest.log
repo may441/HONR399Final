@@ -1,0 +1,6 @@
+﻿  Compiling game modules for hot reload
+  Parsing headers for FinalHUDTestEditor
+    Running UnrealHeaderTool "C:\Users\Patrick May\Documents\Unreal Projects\FinalHUDTest\FinalHUDTest.uproject" "C:\Users\Patrick May\Documents\Unreal Projects\FinalHUDTest\Intermediate\Build\Win64\FinalHUDTestEditor\Development\FinalHUDTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  C:/Users/Patrick May/Documents/Unreal Projects/FinalHUDTest/Source/FinalHUDTest/HeadsUpDisplay.h(31) : LogCompile: Error: BlueprintPure specifier is not allowed for functions with no return value and no output parameters.
+  UnrealHeaderTool failed for target 'FinalHUDTestEditor' (platform: Win64, module info: C:\Users\Patrick May\Documents\Unreal Projects\FinalHUDTest\Intermediate\Build\Win64\FinalHUDTestEditor\Development\FinalHUDTestEditor.uhtmanifest).
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.18\Engine\Build\BatchFiles\Build.bat" FinalHUDTestEditor Win64 Development "C:\Users\Patrick May\Documents\Unreal Projects\FinalHUDTest\FinalHUDTest.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.

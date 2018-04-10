@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\FinalHUDTest.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{7572DFEC-17A1-412B-85AE-94D2F2339D21}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\FinalHUDTest.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\FinalHUDTestEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{2B0AB728-86DE-4D72-AA25-A09E6AD6CD0F}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\FinalHUDTest">
+			<UniqueIdentifier>{26B927F3-BAB5-48E5-9CE5-10A0135A8FB3}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\FinalHUDTest\FinalHUDTest.Build.cs">
+			<Filter>Source\FinalHUDTest</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\FinalHUDTest\FinalHUDTest.cpp">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FinalHUDTest\FinalHUDTest.h">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FinalHUDTest\FinalHUDTestGameModeBase.cpp">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FinalHUDTest\FinalHUDTestGameModeBase.h">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FinalHUDTest\HeadsUpDisplay.cpp">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FinalHUDTest\HeadsUpDisplay.h">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FinalHUDTest\HUDController.cpp">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FinalHUDTest\HUDController.h">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
