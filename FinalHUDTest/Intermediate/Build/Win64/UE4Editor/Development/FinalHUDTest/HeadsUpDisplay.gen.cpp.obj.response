@@ -23,9 +23,9 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source"
-/I F:\FinalHUDTest\Source
-/I F:\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Inc\FinalHUDTest
-/I F:\FinalHUDTest\Source\FinalHUDTest
+/I C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Source
+/I C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Inc\FinalHUDTest
+/I C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Source\FinalHUDTest
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Async"
@@ -358,9 +358,9 @@
 /FI"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"F:\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Inc\FinalHUDTest\HeadsUpDisplay.gen.cpp"
-/FI"F:\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\FinalHUDTest\Definitions.FinalHUDTest.h"
-/Fo"F:\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\FinalHUDTest\HeadsUpDisplay.gen.cpp.obj"
+"C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Inc\FinalHUDTest\HeadsUpDisplay.gen.cpp"
+/FI"C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\FinalHUDTest\Definitions.FinalHUDTest.h"
+/Fo"C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\FinalHUDTest\HeadsUpDisplay.gen.cpp.obj"
 /TP
 /GR-
 /W4
