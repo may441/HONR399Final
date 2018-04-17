@@ -33,16 +33,46 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere, Category = "CurrentCash")
-	float CurrentCashVal;
+		float CurrentCashVal;
 
 	UPROPERTY(EditAnywhere, Category = "CurrentPeople")
-	float CurrentWorkforceVal;
+		float CurrentWorkforceVal;
 
 	UPROPERTY(EditAnywhere, Category = "CurrentPower")
-	float CurrentPowerVal;
+		float CurrentPowerVal;
 
 	UPROPERTY(EditAnywhere, Category = "CurrentMoney")
-	float CurrentMaterialVal;
+		float CurrentMaterialVal;
+
+	UPROPERTY(EditAnywhere, Category = "CurrentCash")
+		float ProjCashVal;
+
+	UPROPERTY(EditAnywhere, Category = "CurrentPeople")
+		float ProjWorkforceVal;
+
+	UPROPERTY(EditAnywhere, Category = "CurrentPower")
+		float ProjPowerVal;
+
+	UPROPERTY(EditAnywhere, Category = "CurrentMoney")
+		float ProjMaterialVal;
+
+	UPROPERTY(EditAnywhere, Category = "CheckPeople")
+		TArray<int32> PeopleCheck;
+
+	UPROPERTY(EditAnywhere, Category = "CheckEnergy")
+		TArray<int32> EnergyCheck;
+
+	UPROPERTY(EditAnywhere, Category = "CheckFW")
+		TArray<int32> FWCheck;
+
+	UPROPERTY(EditAnywhere, Category = "CheckEnv")
+		TArray<int32> EnvCheck;
+
+	UPROPERTY(EditAnywhere, Category = "CheckInf")
+		TArray<int32> InfCheck;
+
+	UFUNCTION(BlueprintCallable, Category = "Game State Access")
+		void UpdateCurrentVals();
 
 protected:
 	// Called when the game starts or when spawned
