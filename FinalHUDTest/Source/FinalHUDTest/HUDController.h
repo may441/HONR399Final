@@ -20,7 +20,7 @@ private:
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
 		TSubclassOf<class UUserWidget> TopLevel;
-
+	
 	// Variable to hold the widget After Creating it.
 	UUserWidget* gameWidget;
 
