@@ -74,6 +74,9 @@ private:
 	UFUNCTION(BlueprintCallable, Category = "Game State Access")
 		void UpdateCurrentVals();
 
+	UFUNCTION(BlueprintCallable, Category = "Game State Access")
+		void PeopleStuff(int ID, bool enable);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

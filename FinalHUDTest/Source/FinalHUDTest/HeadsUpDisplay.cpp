@@ -57,15 +57,29 @@ void AHeadsUpDisplay::SetTaskActivity(int activityID, bool enable)
 	else {
 		int category = activityID / 100;
 		int ID = activityID % 100 - 1;
+
+		if (category == 1) {
+			PeopleStuff(ID, enable);
+		}
 	}
 }
 
 void AHeadsUpDisplay::UpdateCurrentVals()
 {
+	ProjPowerVal = ProjPowerVal + 30;
+
 	CurrentCashVal = ProjCashVal;
 	CurrentMaterialVal = ProjMaterialVal;
 	CurrentWorkforceVal = ProjWorkforceVal;
 	CurrentPowerVal = ProjPowerVal;
+}
+
+void AHeadsUpDisplay::PeopleStuff(int ID, bool enable)
+{
+	int* pointer = PeopleCheck.GetData();
+	pointer[ID] = enable;
+
+	ProjPowerVal = ProjPowerVal + 5;
 }
 
 // Called when the game starts or when spawned
