@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\FinalHUDTest.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{BB4EC8F3-CB3A-4753-920C-3DECD855500C}</UniqueIdentifier>
+			<UniqueIdentifier>{CA7BCCD4-9CF9-42B1-89C8-032DB7623994}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FinalHUDTest.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{3B479D51-F2A1-492A-ABDC-65B542B9E4B8}</UniqueIdentifier>
+			<UniqueIdentifier>{2BA772D1-CFBE-45B3-89AD-702B621DF1A9}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,7 +25,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\FinalHUDTest">
-			<UniqueIdentifier>{DBC5044B-4B3A-407E-BAC9-566FFFE166FC}</UniqueIdentifier>
+			<UniqueIdentifier>{7B323BAA-EDF5-45E3-B511-24E141D294F5}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FinalHUDTest\FinalHUDTest.Build.cs">
 			<Filter>Source\FinalHUDTest</Filter>
@@ -52,6 +52,12 @@
 			<Filter>Source\FinalHUDTest</Filter>
 		</ClCompile >
 		<ClInclude Include="..\..\Source\FinalHUDTest\HUDController.h">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FinalHUDTest\LocalGovActor.cpp">
+			<Filter>Source\FinalHUDTest</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FinalHUDTest\LocalGovActor.h">
 			<Filter>Source\FinalHUDTest</Filter>
 		</ClInclude >
 	</ItemGroup>
