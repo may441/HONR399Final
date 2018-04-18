@@ -8,13 +8,72 @@
 #include "ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AHUDController;
 #ifdef FINALHUDTEST_LocalGovActor_generated_h
 #error "LocalGovActor.generated.h already included, missing '#pragma once' in LocalGovActor.h"
 #endif
 #define FINALHUDTEST_LocalGovActor_generated_h
 
-#define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_12_RPC_WRAPPERS
-#define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->localGovSendTagUpdate(Z_Param_PlayerController); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execlocalGovSendBlockingInfo) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->localGovSendBlockingInfo(Z_Param_PlayerController); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execupdateLocalGovPriorities) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->updateLocalGovPriorities(Z_Param_PlayerController); \
+		P_NATIVE_END; \
+	}
+
+
+#define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->localGovSendTagUpdate(Z_Param_PlayerController); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execlocalGovSendBlockingInfo) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->localGovSendBlockingInfo(Z_Param_PlayerController); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execupdateLocalGovPriorities) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->updateLocalGovPriorities(Z_Param_PlayerController); \
+		P_NATIVE_END; \
+	}
+
+
 #define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesALocalGovActor(); \

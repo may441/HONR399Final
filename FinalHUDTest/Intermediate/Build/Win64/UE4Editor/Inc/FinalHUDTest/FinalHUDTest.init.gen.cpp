@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeFinalHUDTest_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/FinalHUDTest",
 				PKG_CompiledIn | 0x00000000,
-				0xBB3BE6E7,
-				0x3F581019,
+				0xC5F428FA,
+				0x71EB1546,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

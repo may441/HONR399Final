@@ -45,16 +45,16 @@ void ALocalGovActor::Tick(float DeltaTime)
 
 }
 
-void ALocalGovActor::updateLocalGovPriorities(TSubclassOf<class HUDController> PlayerController)
+void ALocalGovActor::updateLocalGovPriorities(TSubclassOf<class AHUDController> PlayerController)
 {
 
 }
 
-void ALocalGovActor::localGovSendBlockingInfo(TSubclassOf<class HUDController> PlayerController)
+void ALocalGovActor::localGovSendBlockingInfo(TSubclassOf<class AHUDController> PlayerController)
 {
 }
 
-void ALocalGovActor::localGovSendTagUpdate(TSubclassOf<class HUDController> PlayerController)
+void ALocalGovActor::localGovSendTagUpdate(TSubclassOf<class AHUDController> PlayerController)
 {
 }
 

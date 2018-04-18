@@ -15,6 +15,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execPeopleStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->PeopleStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateCurrentVals) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->UpdateCurrentVals(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetTaskActivity) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_activityID); \
@@ -59,6 +77,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execPeopleStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->PeopleStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateCurrentVals) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->UpdateCurrentVals(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetTaskActivity) \
 	{ \
@@ -147,13 +183,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AHeadsUpDisplay); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AHeadsUpDisplay)
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CurrentCashVal() { return STRUCT_OFFSET(AHeadsUpDisplay, CurrentCashVal); } \
-	FORCEINLINE static uint32 __PPO__CurrentWorkforceVal() { return STRUCT_OFFSET(AHeadsUpDisplay, CurrentWorkforceVal); } \
-	FORCEINLINE static uint32 __PPO__CurrentPowerVal() { return STRUCT_OFFSET(AHeadsUpDisplay, CurrentPowerVal); } \
-	FORCEINLINE static uint32 __PPO__CurrentMaterialVal() { return STRUCT_OFFSET(AHeadsUpDisplay, CurrentMaterialVal); }
-
-
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_PRIVATE_PROPERTY_OFFSET
 #define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_9_PROLOG
 #define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

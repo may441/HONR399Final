@@ -24,11 +24,13 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
-		void updateLocalGovPriorities(TSubclassOf<class HUDController> PlayerController);
-	UFUNCTION(BlueprintPure, Category = "Local Government Actions")
-		void localGovSendBlockingInfo(TSubclassOf<class HUDController> PlayerController);
-	UFUNCTION(BlueprintPure, Category = "Local Government Actions")
-		void localGovSendTagUpdate(TSubclassOf<class HUDController> PlayerController);
+	void updateLocalGovPriorities(TSubclassOf<class AHUDController> PlayerController);
+	
+	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
+	void localGovSendBlockingInfo(TSubclassOf<class AHUDController> PlayerController);
+	
+	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
+	void localGovSendTagUpdate(TSubclassOf<class AHUDController> PlayerController);
 	
 	int peopleActions;
 	int energyActions;

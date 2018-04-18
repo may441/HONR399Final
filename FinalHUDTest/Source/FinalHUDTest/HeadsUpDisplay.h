@@ -31,7 +31,7 @@ public:
 	void SetTaskActivity(int activityID, bool enable);
 	
 
-private:
+public:
 	UPROPERTY(EditAnywhere, Category = "CurrentCash")
 		float CurrentCashVal;
 
