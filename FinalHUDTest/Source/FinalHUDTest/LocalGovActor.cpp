@@ -22,6 +22,13 @@ void ALocalGovActor::BeginPlay()
 	environmentActions = Placeholder;
 	infrastructureActions = Placeholder;
 
+	int peopleTurnsRemaining = 0;
+	int energyTurnsRemaining = 0;
+	int foodWaterTurnsRemaining = 0;
+	int environmentTurnsRemaining = 0;
+	int infrastructureTurnsRemaining = 0;
+
+
 	disasterAssessed         =false;
 	soeDeclared              =false;
 	hospitalRepaired         =false;
@@ -59,156 +66,207 @@ void ALocalGovActor::updateLocalGovPriorities(TSubclassOf<class AHUDController> 
 	std::uniform_int_distribution<int> bernoulli(0, 1);
 	//AI action priorities
 	//People
-	if (!disasterAssessed)
+	if (peopleTurnsRemaining == 0)
 	{
-		peopleActions = AssessDisasterExtent;
-	}
-	else
-	{
-		if (!soeDeclared)
+		if (!disasterAssessed)
 		{
-			peopleActions = DeclareEmergency;
+			peopleActions = AssessDisasterExtent;
+			disasterAssessed = true;
 		}
 		else
 		{
-			if (!ersMobilized)
+			if (!soeDeclared)
 			{
-				peopleActions = MobilizeERS;
+				peopleActions = DeclareEmergency;
+				soeDeclared = true;
 			}
 			else
 			{
-				int decision = uni(rng);
-				if (decision == 0)
+				if (!ersMobilized)
 				{
-					peopleActions = AssignFirefighters;
-				}
-				else if (decision == 1)
-				{
-					peopleActions = RepairHospital;
+					peopleActions = MobilizeERS;
+					ersMobilized = true;
 				}
 				else
 				{
-					peopleActions = TownHallMeeting;
+					int decision = uni(rng);
+					if (decision == 0)
+					{
+						peopleActions = AssignFirefighters;
+					}
+					else if (decision == 1)
+					{
+						peopleActions = RepairHospital;
+					}
+					else
+					{
+						peopleActions = TownHallMeeting;
+					}
 				}
 			}
 		}
+		peopleTurnsRemaining = peopleActions.duration;
+	}
+	else
+	{
+		peopleTurnsRemaining--;
 	}
 	//Energy
-	if (!stateAssistanceRequested)
+	if (energyTurnsRemaining == 0)
 	{
-		energyActions = RequestStateAssist;
-	}
-	else
-	{
-		if (!generatorsSetUp)
+		if (!stateAssistanceRequested)
 		{
-			energyActions = SetUpGenerators;
+			energyActions = RequestStateAssist;
+			stateAssistanceRequested = true;
 		}
 		else
 		{
-			if (energyActions.actionID == CoordinateWPowerCo.actionID)
+			if (!generatorsSetUp)
 			{
-				energyActions = HiringContractors;
-			}
-			else if(energyActions.actionID == HiringContractors.actionID)
-			{
-				energyActions = ContractorRepairing;
+				energyActions = SetUpGenerators;
+				generatorsSetUp = true;
 			}
 			else
 			{
-				energyActions = CoordinateWPowerCo;
+				if (energyActions.actionID == CoordinateWPowerCo.actionID)
+				{
+					energyActions = HiringContractors;
+				}
+				else if (energyActions.actionID == HiringContractors.actionID)
+				{
+					energyActions = ContractorRepairing;
+				}
+				else
+				{
+					energyActions = CoordinateWPowerCo;
+				}
 			}
 		}
+		energyTurnsRemaining = energyActions.duration;
+	}
+	else
+	{
+		energyTurnsRemaining--;
 	}
 	//Food/Water
-
-	if (!ngosCoordinated)
+	if (foodWaterTurnsRemaining == 0)
 	{
-		foodWaterActions = NGOCoordinating;
-	}
-	else
-	{
-		int decision = uni(rng);
-		if (decision == 0)
+		if (!ngosCoordinated)
 		{
-			foodWaterActions = NGOsFoodAssistance;
-		}
-		else if (decision == 1)
-		{
-			foodWaterActions = NGOHousing;
-		}
-		else if (decision == 2)
-		{
-			foodWaterActions = FixingGroundwater;
-		}
-		ngosCoordinated = false;
-	}
-	//Environment
-	if (!enviroReady)
-	{
-		environmentActions = InactiveEnviro;
-	}
-	else
-	{
-		if(!farmlandFinished || !parksFixed)
-		{
-			int decision = bernoulli(rng);
-			if (decision == 1)
-			{
-				environmentActions = RestoreFarmland;
-				farmlandFinished = true;
-			}
-			else
-			{
-				environmentActions = CleanLocalParks;
-				parksFixed = true;
-			}
-		}
-		else
-		{
-			if (farmlandFinished && !parksFixed)
-			{ 
-				environmentActions = RestoreFarmland;
-				farmlandFinished = true;
-			}
-			else if (!parksFixed && farmlandFinished)
-			{
-				environmentActions = RestoreFarmland;
-				parksFixed = true;
-			}
-			else
-			{
-				environmentActions = FileInsuranceClaim;
-			}
-		}
-	}
-	//Infrastructure
-	if (!aidRequested)
-	{
-		infrastructureActions = RequestMutualAid;
-	}
-	else
-	{
-		if (!contractorsHired)
-		{
-			infrastructureActions = HiringRoadContractor;
+			foodWaterActions = NGOCoordinating;
+			ngosCoordinated = true;
 		}
 		else
 		{
 			int decision = uni(rng);
-			if (decision == 1)
+			if (decision == 0)
 			{
-				infrastructureActions = RepairLocalRoads;
+				foodWaterActions = NGOsFoodAssistance;
+			}
+			else if (decision == 1)
+			{
+				foodWaterActions = NGOHousing;
 			}
 			else if (decision == 2)
 			{
-				infrastructureActions = RepairLocalBusiness;
+				foodWaterActions = FixingGroundwater;
+			}
+			ngosCoordinated = false;
+		}
+		foodWaterTurnsRemaining = foodWaterActions.duration;
+	}
+	else
+	{
+		foodWaterTurnsRemaining--;
+	}
+		//Environment
+	if (environmentTurnsRemaining == 0)
+	{
+		if (!enviroReady)
+		{
+			environmentActions = InactiveEnviro;
+			enviroReady = true;
+		}
+		else
+		{
+			if (!farmlandFinished || !parksFixed)
+			{
+				int decision = bernoulli(rng);
+				if (decision == 1)
+				{
+					environmentActions = RestoreFarmland;
+					farmlandFinished = true;
+				}
+				else
+				{
+					environmentActions = CleanLocalParks;
+					parksFixed = true;
+				}
 			}
 			else
 			{
-				infrastructureActions = IncentivizeBusiness;
+				if (farmlandFinished && !parksFixed)
+				{
+					environmentActions = RestoreFarmland;
+					farmlandFinished = true;
+				}
+				else if (!parksFixed && farmlandFinished)
+				{
+					environmentActions = RestoreFarmland;
+					parksFixed = true;
+				}
+				else
+				{
+					environmentActions = FileInsuranceClaim;
+				}
 			}
 		}
+		environmentTurnsRemaining = environmentActions.duration;
+	}
+	else
+	{
+		environmentTurnsRemaining--;
+	}
+
+
+
+	//Infrastructure
+	if (infrastructureTurnsRemaining == 0)
+	{
+		if (!aidRequested)
+		{
+			infrastructureActions = RequestMutualAid;
+			aidRequested = true;
+		}
+		else
+		{
+			if (!contractorsHired)
+			{
+				infrastructureActions = HiringRoadContractor;
+				contractorsHired = true;
+			}
+			else
+			{
+				int decision = uni(rng);
+				if (decision == 1)
+				{
+					infrastructureActions = RepairLocalRoads;
+				}
+				else if (decision == 2)
+				{
+					infrastructureActions = RepairLocalBusiness;
+				}
+				else
+				{
+					infrastructureActions = IncentivizeBusiness;
+				}
+			}
+		}
+		infrastructureTurnsRemaining = infrastructureActions.duration;
+	}
+	else
+	{
+		infrastructureTurnsRemaining--;
 	}
 }
 
@@ -218,5 +276,12 @@ void ALocalGovActor::localGovSendBlockingInfo(TSubclassOf<class AHUDController> 
 
 void ALocalGovActor::localGovSendTagUpdate(TSubclassOf<class AHUDController> PlayerController)
 {
+
+}
+
+void ALocalGovActor::printCurrentActions(TSubclassOf<class AHUDController> PlayerController)
+{
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("People: %d Energy: %d Food/Water: %d EnviroAction: %d Infrastructure: %d"), peopleActions.actionID, energyActions.actionID, foodWaterActions.actionID, environmentActions.actionID, infrastructureActions.actionID));
 }
 

@@ -37,34 +37,34 @@ typedef struct TownAction {
 
 };
 									  //ID    WF   EN  MON   MAT   MOR  ROAD  POP ECON  H/S  DUR
-const TownAction AssessDisasterExtent(  601, ' ', 'X', 'X',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction AssignFirefighters  (  602, 'x', ' ', ' ',  ' ',  ' ',  ' ', '1', ' ', '1',  1);
-const TownAction DeclareEmergency    (  603, ' ', ' ', ' ',  ' ',  'O',  ' ', ' ', '0', ' ',  1);
-const TownAction MobilizeERS         (  604, ' ', ' ', ' ',  'x',  ' ',  ' ', '1', ' ', '1',  1);
-const TownAction RepairHospital      (  605, ' ', 'O', ' ',  ' ',  '1',  ' ', ' ', ' ', ' ',  1);
-const TownAction TownHallMeeting     (  606, ' ', ' ', ' ',  ' ',  '1',  ' ', '^', ' ', ' ',  1);
-const TownAction SetUpGenerators     (  701, ' ', 'x', ' ',  ' ',  ' ',  ' ', ' ', '1', '1',  1);
-const TownAction RequestStateAssist  (  702, ' ', ' ', 'o',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction HiringContractors   (  703, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction ContractorRepairing (  704, ' ', '1', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction CoordinateWPowerCo  (  705, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction NGOsFoodAssistance  (  801, 'x', ' ', 'o',  ' ',  ' ',  ' ', ' ', ' ', '1',  1);
-const TownAction NGOCoordinating     (  802, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction NGOHousing          (  803, ' ', ' ', ' ',  'O',  ' ',  ' ', '1', ' ', ' ',  1);
-const TownAction FixingGroundwater   (  804, ' ', ' ', ' ',  'X',  ' ',  ' ', ' ', ' ', '1',  1);
-const TownAction RestoreFarmland     (  901, ' ', ' ', 'x',  ' ',  ' ',  ' ', ' ', '1', ' ',  1);
-const TownAction FileInsuranceClaim  (  902, ' ', ' ', 'x',  ' ',  ' ',  ' ', ' ', '1', ' ',  1);
-const TownAction CleanLocalParks     (  903, ' ', ' ', 'x',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction InactiveEnviro      (  904, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction IncentivizeBusiness ( 1001, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', '1', ' ',  1);
-const TownAction RepairLocalRoads    ( 1002, ' ', ' ', ' ',  'X',  ' ',  '1', ' ', ' ', ' ',  1);
-const TownAction RepairRuralRoads    ( 1003, ' ', ' ', ' ',  'x',  ' ',  '1', ' ', ' ', ' ',  1);
-const TownAction RepairLocalBusiness ( 1004, ' ', ' ', 'x',  ' ',  ' ',  ' ', ' ', '1', ' ',  1);
-const TownAction HiringRoadContractor( 1005, ' ', ' ', 'o',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction RequestMutualAid    ( 1006, ' ', ' ', ' ',  ' ',  '0',  ' ', ' ', '0', ' ',  1);
-const TownAction ReviewRoadContractor( 1007, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', '0', ' ',  1);
-const TownAction InactiveInfra       ( 1008, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
-const TownAction Placeholder         ( 9999, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  1);
+const TownAction AssessDisasterExtent(  601, ' ', 'X', 'X',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction AssignFirefighters  (  602, 'x', ' ', ' ',  ' ',  ' ',  ' ', '1', ' ', '1',  0);
+const TownAction DeclareEmergency    (  603, ' ', ' ', ' ',  ' ',  'O',  ' ', ' ', '0', ' ',  0);
+const TownAction MobilizeERS         (  604, ' ', ' ', ' ',  'x',  ' ',  ' ', '1', ' ', '1',  0);
+const TownAction RepairHospital      (  605, ' ', 'O', ' ',  ' ',  '1',  ' ', ' ', ' ', ' ',  0);
+const TownAction TownHallMeeting     (  606, ' ', ' ', ' ',  ' ',  '1',  ' ', '^', ' ', ' ',  0);
+const TownAction SetUpGenerators     (  701, ' ', 'x', ' ',  ' ',  ' ',  ' ', ' ', '1', '1',  0);
+const TownAction RequestStateAssist  (  702, ' ', ' ', 'o',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction HiringContractors   (  703, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction ContractorRepairing (  704, ' ', '1', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction CoordinateWPowerCo  (  705, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction NGOsFoodAssistance  (  801, 'x', ' ', 'o',  ' ',  ' ',  ' ', ' ', ' ', '1',  0);
+const TownAction NGOCoordinating     (  802, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction NGOHousing          (  803, ' ', ' ', ' ',  'O',  ' ',  ' ', '1', ' ', ' ',  0);
+const TownAction FixingGroundwater   (  804, ' ', ' ', ' ',  'X',  ' ',  ' ', ' ', ' ', '1',  0);
+const TownAction RestoreFarmland     (  901, ' ', ' ', 'x',  ' ',  ' ',  ' ', ' ', '1', ' ',  0);
+const TownAction FileInsuranceClaim  (  902, ' ', ' ', 'x',  ' ',  ' ',  ' ', ' ', '1', ' ',  0);
+const TownAction CleanLocalParks     (  903, ' ', ' ', 'x',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction InactiveEnviro      (  904, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction IncentivizeBusiness ( 1001, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', '1', ' ',  0);
+const TownAction RepairLocalRoads    ( 1002, ' ', ' ', ' ',  'X',  ' ',  '1', ' ', ' ', ' ',  0);
+const TownAction RepairRuralRoads    ( 1003, ' ', ' ', ' ',  'x',  ' ',  '1', ' ', ' ', ' ',  0);
+const TownAction RepairLocalBusiness ( 1004, ' ', ' ', 'x',  ' ',  ' ',  ' ', ' ', '1', ' ',  0);
+const TownAction HiringRoadContractor( 1005, ' ', ' ', 'o',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction RequestMutualAid    ( 1006, ' ', ' ', ' ',  ' ',  '0',  ' ', ' ', '0', ' ',  0);
+const TownAction ReviewRoadContractor( 1007, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', '0', ' ',  0);
+const TownAction InactiveInfra       ( 1008, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
+const TownAction Placeholder         ( 9999, ' ', ' ', ' ',  ' ',  ' ',  ' ', ' ', ' ', ' ',  0);
 
 
 
@@ -93,30 +93,71 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
 	void localGovSendTagUpdate(TSubclassOf<class AHUDController> PlayerController);
-	
+
+	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
+	void printCurrentActions(TSubclassOf<class AHUDController> PlayerController);
+
 	TownAction peopleActions;
 	TownAction energyActions;
 	TownAction foodWaterActions;
 	TownAction environmentActions;
 	TownAction infrastructureActions;
 
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
+	int peopleTurnsRemaining;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
+	int energyTurnsRemaining;
+	
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
+	int foodWaterTurnsRemaining;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
+	int environmentTurnsRemaining;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
+	int infrastructureTurnsRemaining;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool disasterAssessed;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool soeDeclared;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool ersMobilized;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool hospitalRepaired;
 
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool generatorsSetUp;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool stateAssistanceRequested;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool contractorsHired;
-	
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool ngosCoordinated;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool plantFixed;
 
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool enviroReady;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool farmlandFinished;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool parksFixed;
 
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool roadContractorsHired;
+
+	UPROPERTY(EditAnywhere, Category = "TownDebug")
 	bool aidRequested;
 
 };

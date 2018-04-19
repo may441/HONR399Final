@@ -16,6 +16,15 @@ class AHUDController;
 
 #define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_74_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execprintCurrentActions) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->printCurrentActions(Z_Param_PlayerController); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
 	{ \
 		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
@@ -45,6 +54,15 @@ class AHUDController;
 
 
 #define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_74_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execprintCurrentActions) \
+	{ \
+		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->printCurrentActions(Z_Param_PlayerController); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
 	{ \
