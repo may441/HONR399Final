@@ -20,7 +20,7 @@ AHeadsUpDisplay::AHeadsUpDisplay()
 		EnergyCheck.Init(0, 3);
 		FWCheck.Init(0, 5);
 		EnvCheck.Init(0, 2);
-		InfCheck.Init(0, 9);
+		InfCheck.Init(0, 8);
 
 		// Projected Resource Values
 		ProjCashVal = CurrentCashVal;
@@ -66,8 +66,6 @@ void AHeadsUpDisplay::SetTaskActivity(int activityID, bool enable)
 
 void AHeadsUpDisplay::UpdateCurrentVals()
 {
-	ProjPowerVal = ProjPowerVal + 30;
-
 	CurrentCashVal = ProjCashVal;
 	CurrentMaterialVal = ProjMaterialVal;
 	CurrentWorkforceVal = ProjWorkforceVal;
@@ -78,8 +76,123 @@ void AHeadsUpDisplay::PeopleStuff(int ID, bool enable)
 {
 	int* pointer = PeopleCheck.GetData();
 	pointer[ID] = enable;
+	
+	if (ID == 0) { // Helicopter Rescue
+		ProjWorkforceVal = ProjWorkforceVal - 15;
+		ProjMaterialVal = ProjMaterialVal - 10;
+	}
+	if (ID == 1) { // Ground Rescue
+		ProjWorkforceVal = ProjWorkforceVal - 5;
+	}
+	if (ID == 2) { // Water Rescue
+		ProjWorkforceVal = ProjWorkforceVal - 10;
+		ProjMaterialVal = ProjMaterialVal - 5;
+	}
+	if (ID == 3) { // Homeless Shelters
+		ProjPowerVal = ProjPowerVal - 10;
+		ProjCashVal = ProjCashVal - 10;
+	}
+	if (ID == 4) { // Family Relocation
+		ProjWorkforceVal = ProjWorkforceVal - 5;
+	}
+	if (ID == 5) { // Identification Services
+		ProjWorkforceVal = ProjWorkforceVal - 5;
+	}
+	if (ID == 6) { // Triage
+		ProjPowerVal = ProjPowerVal - 5;
+		ProjCashVal = ProjCashVal - 5;
+		ProjMaterialVal = ProjMaterialVal - 3;
+	}
+	if (ID == 7) { // Extended Care
+		ProjPowerVal = ProjPowerVal - 15;
+		ProjCashVal = ProjCashVal - 7;
+	}
+	if (ID == 8) { // Enforcement
+		ProjCashVal = ProjCashVal - 5;
+	}
+}
 
-	ProjPowerVal = ProjPowerVal + 5;
+void AHeadsUpDisplay::EnergyStuff(int ID, bool enable)
+{
+	int* pointer = EnergyCheck.GetData();
+	pointer[ID] = enable;
+
+	if (pointer[0] * pointer[1] == 1) { // Both power stuff was completed
+		ProjPowerVal = ProjPowerVal + 50;
+	}
+	if (ID == 1) { // Power Lines
+		ProjWorkforceVal = ProjWorkforceVal - 5;
+	}
+	if (ID == 0) { // Power Plants
+		ProjWorkforceVal = ProjWorkforceVal - 10;
+	}
+}
+
+void AHeadsUpDisplay::FWStuff(int ID, bool enable)
+{
+	int* pointer = FWCheck.GetData();
+	pointer[ID] = enable;
+
+	if (ID == 0) { // Aid via Trucks
+		ProjWorkforceVal = ProjWorkforceVal - 5;
+	}
+	if (ID == 1) { // Sundry Distribution
+		ProjWorkforceVal = ProjWorkforceVal - 5;
+	}
+	if (ID == 2) { // Supermarkets
+		ProjPowerVal = ProjPowerVal - 10;
+	}
+	if (ID == 3) { // Groundwater Treatment
+		ProjCashVal = ProjCashVal - 7;
+		ProjMaterialVal = ProjMaterialVal - 5;
+	}
+	if (ID == 4) { // Humanitarian Aid
+		ProjWorkforceVal = ProjWorkforceVal - 2;
+	}
+}
+
+void AHeadsUpDisplay::EnvStuff(int ID, bool enable) {
+	int* pointer = EnvCheck.GetData();
+	pointer[ID] = enable;
+
+	if (ID == 0) { // Restore Agriculture
+		ProjWorkforceVal = ProjWorkforceVal - 7;
+	}
+
+	// Toxic Waste affects Tags, not resources
+}
+
+void AHeadsUpDisplay::InfStuff(int ID, bool enable)
+{
+	int* pointer = InfCheck.GetData();
+	pointer[ID] = enable;
+
+	if (ID == 0) { // Repair Housing
+		ProjWorkforceVal = ProjWorkforceVal - 7;
+	}
+
+	// Insurance Claims <-- Needs to be added for Tags, not resources
+
+	if (ID == 2) { // Repair Roads
+		ProjWorkforceVal = ProjWorkforceVal - 10;
+	}
+	if (ID == 3) { // Traffic Enforcement
+		ProjWorkforceVal = ProjWorkforceVal - 3;
+	}
+	if (ID == 4) { // Loans
+		ProjCashVal = ProjCashVal - 13;
+	}
+	if (ID == 5) { // Purchase Material
+		ProjCashVal = ProjCashVal - 6;
+		ProjMaterialVal = ProjMaterialVal + 12;
+	}
+	if (ID == 6) { // Recruit Volunteers
+		ProjWorkforceVal = ProjWorkforceVal + 10;
+	}
+	if (ID == 7) { // Internet
+		ProjWorkforceVal = ProjWorkforceVal - 3;
+		ProjPowerVal = ProjPowerVal - 5;
+	}
 }
 
 // Called when the game starts or when spawned

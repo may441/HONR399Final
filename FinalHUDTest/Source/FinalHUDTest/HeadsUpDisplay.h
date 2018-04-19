@@ -77,6 +77,18 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Game State Access")
 		void PeopleStuff(int ID, bool enable);
 
+	UFUNCTION(BlueprintCallable, Category = "Game State Access")
+		void EnergyStuff(int ID, bool enable);
+
+	UFUNCTION(BlueprintCallable, Category = "Game State Access")
+		void FWStuff(int ID, bool enable);
+
+	UFUNCTION(BlueprintCallable, Category = "Game State Access")
+		void EnvStuff(int ID, bool enable);
+	
+	UFUNCTION(BlueprintCallable, Category = "Game State Access")
+		void InfStuff(int ID, bool enable);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
