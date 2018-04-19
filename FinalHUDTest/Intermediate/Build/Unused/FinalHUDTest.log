@@ -1,28 +1,9 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for FinalHUDTestEditor (no existing makefile)
-  Performing full C++ include scan (no include cache file)
-  Parsing headers for FinalHUDTestEditor
-    Running UnrealHeaderTool "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\FinalHUDTest.uproject" "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\FinalHUDTestEditor\Development\FinalHUDTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for FinalHUDTestEditor in 6.5402403 seconds
-  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-10.dll".
-  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-10.pdb".
-  Performing 15 actions (4 in parallel)
-  [3/15] Resource PCLaunch.rc
-  [2/15] Resource ModuleVersionResource.rc.inl
-  SharedPCH.Engine.cpp
-  HUDController.cpp
-  FinalHUDTestGameModeBase.cpp
-  HeadsUpDisplay.cpp
+  Performing 3 actions (4 in parallel)
   LocalGovActor.cpp
-  FinalHUDTest.init.gen.cpp
-  FinalHUDTest.cpp
-  FinalHUDTestGameModeBase.gen.cpp
-  HeadsUpDisplay.gen.cpp
-  HUDController.gen.cpp
-  LocalGovActor.gen.cpp
-  [14/15] Link UE4Editor-FinalHUDTest.dll
-  [15/15] Link UE4Editor-FinalHUDTest.lib
+  [2/3] Link UE4Editor-FinalHUDTest.dll
+  [3/3] Link UE4Editor-FinalHUDTest.lib
      Creating library C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.lib and object C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.exp
      Creating library C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.suppressed.lib and object C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.suppressed.exp
   Deploying FinalHUDTestEditor Win64 Development...
-  Total build time: 61.62 seconds (Local executor: 46.97 seconds)
+  Total build time: 3.03 seconds (Local executor: 1.82 seconds)
