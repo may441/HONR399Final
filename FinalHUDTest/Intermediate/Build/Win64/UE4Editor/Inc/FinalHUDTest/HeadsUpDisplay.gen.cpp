@@ -17,10 +17,14 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 	FINALHUDTEST_API UClass* Z_Construct_UClass_AHeadsUpDisplay();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	UPackage* Z_Construct_UPackage__Script_FinalHUDTest();
+	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_EnergyStuff();
+	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_EnvStuff();
+	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_FWStuff();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentCashVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentMaterialVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentPowerVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentWorkforceVal();
+	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_InfStuff();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_PeopleStuff();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_SetTaskActivity();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_UpdateCurrentVals();
@@ -29,15 +33,103 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 	{
 		UClass* Class = AHeadsUpDisplay::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "EnergyStuff", (Native)&AHeadsUpDisplay::execEnergyStuff },
+			{ "EnvStuff", (Native)&AHeadsUpDisplay::execEnvStuff },
+			{ "FWStuff", (Native)&AHeadsUpDisplay::execFWStuff },
 			{ "GetCurrentCashVal", (Native)&AHeadsUpDisplay::execGetCurrentCashVal },
 			{ "GetCurrentMaterialVal", (Native)&AHeadsUpDisplay::execGetCurrentMaterialVal },
 			{ "GetCurrentPowerVal", (Native)&AHeadsUpDisplay::execGetCurrentPowerVal },
 			{ "GetCurrentWorkforceVal", (Native)&AHeadsUpDisplay::execGetCurrentWorkforceVal },
+			{ "InfStuff", (Native)&AHeadsUpDisplay::execInfStuff },
 			{ "PeopleStuff", (Native)&AHeadsUpDisplay::execPeopleStuff },
 			{ "SetTaskActivity", (Native)&AHeadsUpDisplay::execSetTaskActivity },
 			{ "UpdateCurrentVals", (Native)&AHeadsUpDisplay::execUpdateCurrentVals },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_EnergyStuff()
+	{
+		struct HeadsUpDisplay_eventEnergyStuff_Parms
+		{
+			int32 ID;
+			bool enable;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			auto NewProp_enable_SetBit = [](void* Obj){ ((HeadsUpDisplay_eventEnergyStuff_Parms*)Obj)->enable = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_enable = { UE4CodeGen_Private::EPropertyClass::Bool, "enable", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(HeadsUpDisplay_eventEnergyStuff_Parms), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_enable_SetBit)>::SetBit, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ID = { UE4CodeGen_Private::EPropertyClass::Int, "ID", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(HeadsUpDisplay_eventEnergyStuff_Parms, ID), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_enable,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ID,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "Game State Access" },
+				{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeadsUpDisplay, "EnergyStuff", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(HeadsUpDisplay_eventEnergyStuff_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_EnvStuff()
+	{
+		struct HeadsUpDisplay_eventEnvStuff_Parms
+		{
+			int32 ID;
+			bool enable;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			auto NewProp_enable_SetBit = [](void* Obj){ ((HeadsUpDisplay_eventEnvStuff_Parms*)Obj)->enable = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_enable = { UE4CodeGen_Private::EPropertyClass::Bool, "enable", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(HeadsUpDisplay_eventEnvStuff_Parms), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_enable_SetBit)>::SetBit, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ID = { UE4CodeGen_Private::EPropertyClass::Int, "ID", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(HeadsUpDisplay_eventEnvStuff_Parms, ID), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_enable,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ID,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "Game State Access" },
+				{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeadsUpDisplay, "EnvStuff", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(HeadsUpDisplay_eventEnvStuff_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_FWStuff()
+	{
+		struct HeadsUpDisplay_eventFWStuff_Parms
+		{
+			int32 ID;
+			bool enable;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			auto NewProp_enable_SetBit = [](void* Obj){ ((HeadsUpDisplay_eventFWStuff_Parms*)Obj)->enable = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_enable = { UE4CodeGen_Private::EPropertyClass::Bool, "enable", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(HeadsUpDisplay_eventFWStuff_Parms), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_enable_SetBit)>::SetBit, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ID = { UE4CodeGen_Private::EPropertyClass::Int, "ID", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(HeadsUpDisplay_eventFWStuff_Parms, ID), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_enable,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ID,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "Game State Access" },
+				{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeadsUpDisplay, "FWStuff", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(HeadsUpDisplay_eventFWStuff_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentCashVal()
 	{
@@ -135,6 +227,34 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_InfStuff()
+	{
+		struct HeadsUpDisplay_eventInfStuff_Parms
+		{
+			int32 ID;
+			bool enable;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			auto NewProp_enable_SetBit = [](void* Obj){ ((HeadsUpDisplay_eventInfStuff_Parms*)Obj)->enable = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_enable = { UE4CodeGen_Private::EPropertyClass::Bool, "enable", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(HeadsUpDisplay_eventInfStuff_Parms), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_enable_SetBit)>::SetBit, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ID = { UE4CodeGen_Private::EPropertyClass::Int, "ID", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(HeadsUpDisplay_eventInfStuff_Parms, ID), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_enable,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ID,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "Game State Access" },
+				{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeadsUpDisplay, "InfStuff", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(HeadsUpDisplay_eventInfStuff_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_PeopleStuff()
 	{
 		struct HeadsUpDisplay_eventPeopleStuff_Parms
@@ -221,10 +341,14 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 				(UObject* (*)())Z_Construct_UPackage__Script_FinalHUDTest,
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_AHeadsUpDisplay_EnergyStuff, "EnergyStuff" }, // 2818603665
+				{ &Z_Construct_UFunction_AHeadsUpDisplay_EnvStuff, "EnvStuff" }, // 3692033732
+				{ &Z_Construct_UFunction_AHeadsUpDisplay_FWStuff, "FWStuff" }, // 2676804132
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentCashVal, "GetCurrentCashVal" }, // 3597042369
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentMaterialVal, "GetCurrentMaterialVal" }, // 3949681773
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentPowerVal, "GetCurrentPowerVal" }, // 1021705637
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentWorkforceVal, "GetCurrentWorkforceVal" }, // 2504279909
+				{ &Z_Construct_UFunction_AHeadsUpDisplay_InfStuff, "InfStuff" }, // 330293635
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_PeopleStuff, "PeopleStuff" }, // 193585317
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_SetTaskActivity, "SetTaskActivity" }, // 4134828790
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_UpdateCurrentVals, "UpdateCurrentVals" }, // 1731037113
@@ -370,7 +494,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHeadsUpDisplay, 2436934710);
+	IMPLEMENT_CLASS(AHeadsUpDisplay, 4044007736);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AHeadsUpDisplay(Z_Construct_UClass_AHeadsUpDisplay, &AHeadsUpDisplay::StaticClass, TEXT("/Script/FinalHUDTest"), TEXT("AHeadsUpDisplay"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AHeadsUpDisplay);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

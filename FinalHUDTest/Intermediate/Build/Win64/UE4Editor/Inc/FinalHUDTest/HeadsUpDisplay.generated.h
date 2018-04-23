@@ -15,6 +15,46 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execInfStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->InfStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEnvStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->EnvStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFWStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->FWStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEnergyStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->EnergyStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execPeopleStuff) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
@@ -77,6 +117,46 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execInfStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->InfStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEnvStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->EnvStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFWStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->FWStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEnergyStuff) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_ID); \
+		P_GET_UBOOL(Z_Param_enable); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->EnergyStuff(Z_Param_ID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execPeopleStuff) \
 	{ \
