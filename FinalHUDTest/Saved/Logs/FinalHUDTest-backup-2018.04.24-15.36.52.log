@@ -1,0 +1,1231 @@
+﻿Log file open, 04/24/18 14:30:26
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: FinalHUDTest
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(-1342074556) SRandInit(-1342074556).
+LogInit: Read version file with build ID '3709383'
+LogInit: Overriding engine version to CL 3832480, compatible CL 3709383
+LogInit: Registered custom module enumerator with build ID '3709383'
+LogTaskGraph: Started task graph with 5 named threads and 20 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.266168
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleARKit
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogModuleManager: Warning: Module file ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Binaries/Win64/UE4Editor-FinalHUDTest.dll is missing. This is likely a stale module that must be recompiled.
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperSpriteSheetImporter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperTiledImporter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-SmartSnapping.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeRuntime.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/GitSourceControl/Binaries/Win64/UE4Editor-GitSourceControl.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/PerforceSourceControl/Binaries/Win64/UE4Editor-PerforceSourceControl.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/SubversionSourceControl/Binaries/Win64/UE4Editor-SubversionSourceControl.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/UObjectPlugin/Binaries/Win64/UE4Editor-UObjectPlugin.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioCodeSourceCodeAccess.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioSourceCodeAccess.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AssetManagerEditor/Binaries/Win64/UE4Editor-AssetManagerEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AudioCapture/Binaries/Win64/UE4Editor-AudioCapture.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimation.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimationEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/GameplayTagsEditor/Binaries/Win64/UE4Editor-GameplayTagsEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/MobileLauncherProfileWizard/Binaries/Win64/UE4Editor-MobileLauncherProfileWizard.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/PluginBrowser/Binaries/Win64/UE4Editor-PluginBrowser.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/SpeedTreeImporter/Binaries/Win64/UE4Editor-SpeedTreeImporter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicImporter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicLibrary.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/CharacterAI/Binaries/Win64/UE4Editor-CharacterAI.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/HTML5Networking/Binaries/Win64/UE4Editor-HTML5Networking.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMedia.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-OpenExrWrapper.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositing.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositingEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaPlayerEditor/Binaries/Win64/UE4Editor-MediaPlayerEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMedia.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/TcpMessaging/Binaries/Win64/UE4Editor-TcpMessaging.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/UdpMessaging/Binaries/Win64/UE4Editor-UdpMessaging.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/ActorSequence/Binaries/Win64/UE4Editor-ActorSequence.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystem/Binaries/Win64/UE4Editor-OnlineSubsystem.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/UE4Editor-OnlineSubsystemNull.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineSubsystemUtils.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineBlueprintSupport.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Binaries/Win64/UE4Editor-AndroidDeviceProfileSelector.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidPermission/Binaries/Win64/UE4Editor-AndroidPermission.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AppleARKit/Binaries/Win64/UE4Editor-AppleARKit.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/UE4Editor-ArchVisCharacter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CableComponent/Binaries/Win64/UE4Editor-CableComponent.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/UE4Editor-CustomMeshComponent.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/UE4Editor-ExampleDeviceProfileSelector.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysics.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysicsEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LocationServicesBPLibrary/Binaries/Win64/UE4Editor-LocationServicesBPLibrary.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/MobilePatchingUtils/Binaries/Win64/UE4Editor-MobilePatchingUtils.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusHMD.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusInput.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehicles.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehiclesEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponent.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponentEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/UE4Editor-RuntimePhysXCooking.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVR.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVRController.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/UE4Editor-WindowsMoviePlayer.dll (API version 3709383).
+LogInit: Warning: Incompatible or missing module: UE4Editor-FinalHUDTest.dll
+Running C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe FinalHUDTest Development Win64 -project="C:/Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/FinalHUDTest.uproject" -editorrecompile -progress -NoHotReloadFromIDE
+Using 'git status' to determine working set for adaptive non-unity build.
+Creating makefile for FinalHUDTest (changes to target files)
+@progress push 5%
+Parsing headers for FinalHUDTestEditor
+  Running UnrealHeaderTool "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\FinalHUDTest.uproject" "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\FinalHUDTestEditor\Development\FinalHUDTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+Reflection code generated for FinalHUDTestEditor in 9.1344765 seconds
+@progress pop
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-4910.dll".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-4910.pdb".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-5655.dll".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-5655.pdb".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-5884.dll".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-5884.pdb".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-7825.dll".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-7825.pdb".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-9026.dll".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-9026.pdb".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-9263.dll".
+Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-9263.pdb".
+Performing 13 actions (9 in parallel)
+SharedPCH.Engine.cpp
+FinalHUDTest.init.gen.cpp
+FinalHUDTest.cpp
+HeadsUpDisplay.cpp
+FinalHUDTestGameModeBase.cpp
+LocalGovActor.cpp
+HUDController.cpp
+HUDController.gen.cpp
+FinalHUDTestGameModeBase.gen.cpp
+HeadsUpDisplay.gen.cpp
+LocalGovActor.gen.cpp
+[12/13] Link UE4Editor-FinalHUDTest.dll
+[13/13] Link UE4Editor-FinalHUDTest.lib
+   Creating library C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.lib and object C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.exp
+   Creating library C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.suppressed.lib and object C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.suppressed.exp
+Failed to write dependency cache: Access to the path 'C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\FinalHUDTestEditor' is denied.
+Failed to write FlatCPPIncludeDependencyCache: Access to the path 'C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\FinalHUDTestEditor' is denied.
+Total build time: 32.20 seconds (Local executor: 11.09 seconds)
+LogModuleManager: Display: Found up-to-date module file ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Binaries/Win64/UE4Editor-FinalHUDTest.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperSpriteSheetImporter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperTiledImporter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-SmartSnapping.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeRuntime.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/GitSourceControl/Binaries/Win64/UE4Editor-GitSourceControl.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/PerforceSourceControl/Binaries/Win64/UE4Editor-PerforceSourceControl.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/SubversionSourceControl/Binaries/Win64/UE4Editor-SubversionSourceControl.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/UObjectPlugin/Binaries/Win64/UE4Editor-UObjectPlugin.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioCodeSourceCodeAccess.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioSourceCodeAccess.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AssetManagerEditor/Binaries/Win64/UE4Editor-AssetManagerEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AudioCapture/Binaries/Win64/UE4Editor-AudioCapture.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimation.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimationEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/GameplayTagsEditor/Binaries/Win64/UE4Editor-GameplayTagsEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/MobileLauncherProfileWizard/Binaries/Win64/UE4Editor-MobileLauncherProfileWizard.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/PluginBrowser/Binaries/Win64/UE4Editor-PluginBrowser.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/SpeedTreeImporter/Binaries/Win64/UE4Editor-SpeedTreeImporter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicImporter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicLibrary.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/CharacterAI/Binaries/Win64/UE4Editor-CharacterAI.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/HTML5Networking/Binaries/Win64/UE4Editor-HTML5Networking.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMedia.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-OpenExrWrapper.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositing.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositingEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaPlayerEditor/Binaries/Win64/UE4Editor-MediaPlayerEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMedia.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/TcpMessaging/Binaries/Win64/UE4Editor-TcpMessaging.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/UdpMessaging/Binaries/Win64/UE4Editor-UdpMessaging.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/ActorSequence/Binaries/Win64/UE4Editor-ActorSequence.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystem/Binaries/Win64/UE4Editor-OnlineSubsystem.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/UE4Editor-OnlineSubsystemNull.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineSubsystemUtils.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineBlueprintSupport.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Binaries/Win64/UE4Editor-AndroidDeviceProfileSelector.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidPermission/Binaries/Win64/UE4Editor-AndroidPermission.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AppleARKit/Binaries/Win64/UE4Editor-AppleARKit.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/UE4Editor-ArchVisCharacter.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CableComponent/Binaries/Win64/UE4Editor-CableComponent.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/UE4Editor-CustomMeshComponent.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/UE4Editor-ExampleDeviceProfileSelector.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysics.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysicsEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LocationServicesBPLibrary/Binaries/Win64/UE4Editor-LocationServicesBPLibrary.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/MobilePatchingUtils/Binaries/Win64/UE4Editor-MobilePatchingUtils.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusHMD.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusInput.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehicles.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehiclesEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponent.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponentEditor.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/UE4Editor-RuntimePhysXCooking.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVR.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVRController.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/UE4Editor-WindowsMoviePlayer.dll (API version 3709383).
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.18-CL-3832480
+LogInit: Engine Version: 4.18.3-3832480+++UE4+Release-4.18
+LogInit: Compatible Engine Version: 4.18.0-3709383+++UE4+Release-4.18
+LogInit: Net CL: 3709383
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 30
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 20
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 12
+LogInit: Compiled (64-bit): Jan 12 2018 02:04:55
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.18
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.04.24-18.31.10:840][  0]LogInit: Selected Device Profile: [Windows]
+[2018.04.24-18.31.10:840][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.04.24-18.31.10:854][  0]LogInit: Computer: NOVALAB04
+[2018.04.24-18.31.10:854][  0]LogInit: User: Dorothy
+[2018.04.24-18.31.10:854][  0]LogInit: CPU Page size=4096, Cores=6
+[2018.04.24-18.31.10:854][  0]LogInit: High frequency timer resolution =3.322424 MHz
+[2018.04.24-18.31.10:854][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2018.04.24-18.31.10:854][  0]LogMemory: Platform Memory Stats for Windows
+[2018.04.24-18.31.10:854][  0]LogMemory: Process Physical Memory: 289.02 MB used, 289.02 MB peak
+[2018.04.24-18.31.10:854][  0]LogMemory: Process Virtual Memory: 278.09 MB used, 278.09 MB peak
+[2018.04.24-18.31.10:854][  0]LogMemory: Physical Memory: 8955.64 MB used,  23749.40 MB free, 32705.05 MB total
+[2018.04.24-18.31.10:854][  0]LogMemory: Virtual Memory: 806.45 MB used,  23749.40 MB free, 134217728.00 MB total
+[2018.04.24-18.31.11:291][  0]LogInit: Using OS detected language (en-US).
+[2018.04.24-18.31.11:291][  0]LogInit: Using OS detected locale (en-US).
+[2018.04.24-18.31.11:297][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.04.24-18.31.11:693][  0]LogInit: Setting process to per monitor DPI aware
+[2018.04.24-18.31.12:197][  0]LogD3D11RHI: D3D11 adapters:
+[2018.04.24-18.31.12:236][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX TITAN Black' (Feature Level 11_0)
+[2018.04.24-18.31.12:236][  0]LogD3D11RHI:       6106/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.04.24-18.31.12:240][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.04.24-18.31.12:240][  0]LogD3D11RHI:       0/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.04.24-18.31.12:240][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.04.24-18.31.12:246][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.04.24-18.31.12:246][  0]LogD3D11RHI:     GPU DeviceId: 0x100c (for the marketing name, search the web for "GPU Device Id")
+[2018.04.24-18.31.12:246][  0]LogWindows: EnumDisplayDevices:
+[2018.04.24-18.31.12:247][  0]LogWindows:    0. 'NVIDIA GeForce GTX TITAN Black' (P:1 D:1)
+[2018.04.24-18.31.12:247][  0]LogWindows:    1. 'NVIDIA GeForce GTX TITAN Black' (P:0 D:1)
+[2018.04.24-18.31.12:247][  0]LogWindows:    2. 'NVIDIA GeForce GTX TITAN Black' (P:0 D:0)
+[2018.04.24-18.31.12:247][  0]LogWindows:    3. 'NVIDIA GeForce GTX TITAN Black' (P:0 D:0)
+[2018.04.24-18.31.12:248][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.04.24-18.31.12:248][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX TITAN Black
+[2018.04.24-18.31.12:248][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.04.24-18.31.12:248][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.04.24-18.31.12:248][  0]LogRHI: Texture pool is 4274 MB (70% of 6106 MB)
+[2018.04.24-18.31.12:275][  0]LogD3D11RHI: Async texture creation enabled
+[2018.04.24-18.31.12:289][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2018.04.24-18.31.12:333][  0]LogShaderCompilers: Guid format shader working directory is -59 characters bigger than the processId version (../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Intermediate/Shaders/WorkingDirectory/9304/).
+[2018.04.24-18.31.12:334][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Dorothy/AppData/Local/Temp/UnrealShaderWorkingDir/6D2FECC140F2ABEF237D06A7637A8B11/'.
+[2018.04.24-18.31.12:334][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.04.24-18.31.13:690][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.04.24-18.31.13:820][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.04.24-18.31.13:948][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.04.24-18.31.14:066][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.04.24-18.31.14:188][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.04.24-18.31.14:314][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.04.24-18.31.14:432][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.04.24-18.31.14:558][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.04.24-18.31.14:669][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.04.24-18.31.14:787][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.04.24-18.31.14:913][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.04.24-18.31.15:031][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.04.24-18.31.15:157][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.04.24-18.31.15:275][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.04.24-18.31.15:520][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.04.24-18.31.15:520][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.04.24-18.31.15:639][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.04.24-18.31.15:753][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.04.24-18.31.15:938][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.04.24-18.31.15:994][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.04.24-18.31.16:112][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.04.24-18.31.16:229][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.04.24-18.31.16:345][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.04.24-18.31.16:462][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.04.24-18.31.16:462][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.04.24-18.31.17:697][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.04.24-18.31.17:776][  0]LogDerivedDataCache: Loaded boot cache 0.08s 78MB C:/Users/Dorothy/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2018.04.24-18.31.17:777][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Dorothy/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
+[2018.04.24-18.31.17:777][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.04.24-18.31.17:777][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.04.24-18.31.17:777][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.04.24-18.31.17:777][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.04.24-18.31.17:793][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.04.24-18.31.17:806][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Dorothy/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.04.24-18.31.17:818][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.04.24-18.31.17:818][  0]LogSlate: Using Freetype 2.6.0
+[2018.04.24-18.31.17:820][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.04.24-18.31.17:820][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.04.24-18.31.18:378][  0]LogInit: Selected Device Profile: [Windows]
+[2018.04.24-18.31.19:134][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.04.24-18.31.19:249][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.04.24-18.31.19:249][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.04.24-18.31.19:249][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.04.24-18.31.19:249][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.04.24-18.31.19:249][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.04.24-18.31.19:295][  0]LogNetVersion: FinalHUDTest , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2928852261)
+[2018.04.24-18.31.19:550][  0]LogAssetRegistry: FAssetRegistry took 0.0269 seconds to start up
+[2018.04.24-18.31.20:307][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.095122 seconds
+[2018.04.24-18.31.20:312][  0]LogUObjectArray: 35870 objects as part of root set at end of initial load.
+[2018.04.24-18.31.20:313][  0]LogUObjectAllocator: 7363696 out of 0 bytes used by permanent object pool.
+[2018.04.24-18.31.20:313][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.04.24-18.31.20:446][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.04.24-18.31.26:217][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.04.24-18.31.26:300][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.04.24-18.31.28:049][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.04.24-18.31.29:028][  0]SourceControl: Source control is disabled
+[2018.04.24-18.31.29:028][  0]SourceControl: Source control is disabled
+[2018.04.24-18.31.29:162][  0]SourceControl: Source control is disabled
+[2018.04.24-18.31.29:294][  0]SourceControl: Source control is disabled
+[2018.04.24-18.31.31:360][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.04.24-18.31.32:033][  0]LogOcInput: OculusInput pre-init called
+[2018.04.24-18.31.32:649][  0]LogEngine: Initializing Engine...
+[2018.04.24-18.31.32:651][  0]LogHMD: Oculus plugin initialized. Version: 4.18.3-3832480+++UE4+Release-4.18, OVRPlugin: 1.19.0
+[2018.04.24-18.31.32:889][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.04.24-18.31.32:889][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.04.24-18.31.33:220][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.04.24-18.31.33:243][  0]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-18.31.33:263][  0]LogInit: FAudioDevice initialized.
+[2018.04.24-18.31.33:354][  0]LogDerivedDataCache: Saved boot cache 0.09s 78MB C:/Users/Dorothy/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2018.04.24-18.31.33:365][  0]LogInit: Texture streaming: Enabled
+[2018.04.24-18.31.33:623][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.04.24-18.31.33:974][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.04.24-18.31.33:975][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.04.24-18.31.34:194][  0]LogInit: Transaction tracking system initialized
+[2018.04.24-18.31.35:052][  0]BlueprintLog: New page: Editor Load
+[2018.04.24-18.31.37:509][  0]LocalizationService: Localization service is disabled
+[2018.04.24-18.31.38:949][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2018.04.24-18.31.38:949][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2018.04.24-18.31.38:950][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2018.04.24-18.31.39:522][  0]LogConsoleResponse: Display: 
+[2018.04.24-18.31.39:759][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.04.24-18.31.39:759][  0]LogCook: Display: Mobile HDR setting 1
+[2018.04.24-18.31.39:759][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.04.24-18.31.40:131][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/' took 0.02s
+[2018.04.24-18.31.42:721][  0]SourceControl: Source control is disabled
+[2018.04.24-18.31.42:721][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/GameLevel/DisasterMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.04.24-18.31.42:722][  0]LightingResults: New page: Lighting Build
+[2018.04.24-18.31.42:826][  0]MapCheck: New page: Map Check
+[2018.04.24-18.31.42:826][  0]LightingResults: New page: Lighting Build
+[2018.04.24-18.31.43:173][  0]LogLinker: Warning: Can't find file '/Game/GameLevel/DisasterMap_BuiltData'
+[2018.04.24-18.31.43:173][  0]LogLinker: Warning: Can't find file for asset '/Game/GameLevel/DisasterMap_BuiltData' while loading ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/GameLevel/DisasterMap.umap.
+[2018.04.24-18.31.43:173][  0]LoadErrors: Error: /Game/GameLevel/DisasterMap : Can't find file for asset. /Game/GameLevel/DisasterMap_BuiltData
+[2018.04.24-18.31.43:247][  0]LogLinker: Warning: Can't find file '/Game/GameLevel/DisasterMap_BuiltData'
+[2018.04.24-18.31.43:247][  0]LogLinker: Warning: Can't find file for asset '/Game/GameLevel/DisasterMap_BuiltData' while loading ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/GameLevel/DisasterMap.umap.
+[2018.04.24-18.31.43:247][  0]LoadErrors: Error: /Game/GameLevel/DisasterMap : Can't find file for asset. /Game/GameLevel/DisasterMap_BuiltData
+[2018.04.24-18.31.43:803][  0]LogLinker: Warning: Can't find file '/Game/GameLevel/DisasterMap_BuiltData'
+[2018.04.24-18.31.43:803][  0]LoadErrors: Failed to load /Game/GameLevel/DisasterMap_BuiltData.DisasterMap_BuiltData Referenced by PersistentLevel
+[2018.04.24-18.31.43:803][  0]LogLinker: Warning: Can't find file for asset '/Game/GameLevel/DisasterMap_BuiltData' while loading NULL.
+[2018.04.24-18.31.43:804][  0]LoadErrors: Failed to load /Game/GameLevel/DisasterMap_BuiltData.DisasterMap_BuiltData Referenced by PersistentLevel
+[2018.04.24-18.31.44:090][  0]LogTexture: Display: Building textures: Texture2D_1031 (BGRA8, 512X512)
+[2018.04.24-18.31.44:090][  0]LogTexture: Display: Building textures: Texture2D_1039 (BGRA8, 512X512)
+[2018.04.24-18.31.44:090][  0]LogTexture: Display: Building textures: Texture2D_1543 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1055 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1047 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1311 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1551 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1287 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1303 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1295 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1559 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1567 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1799 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1807 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1815 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_1823 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_2063 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_2055 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_2071 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_2079 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_263 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_271 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_519 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_287 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_775 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_279 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_783 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_527 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_535 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_791 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_543 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogTexture: Display: Building textures: Texture2D_799 (BGRA8, 512X512)
+[2018.04.24-18.31.44:091][  0]LogMaterial: Missing cached shader map for material M_Ground_Grass, compiling. 
+[2018.04.24-18.31.44:166][  0]LogMaterial: Missing cached shader map for material M_Ground_Grass, compiling. 
+[2018.04.24-18.31.44:270][  0]LogMaterial: Missing cached shader map for material M_Water_Ocean, compiling. 
+[2018.04.24-18.31.44:310][  0]LogMaterial: Missing cached shader map for material M_Water_Ocean, compiling. 
+[2018.04.24-18.31.44:534][  0]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-18.31.49:283][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.04.24-18.31.49:309][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.04.24-18.31.49:606][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 296.656ms to complete.
+[2018.04.24-18.31.49:606][  0]LogFileHelpers: Loading map 'DisasterMap' took 6.885
+[2018.04.24-18.31.49:928][  0]LogCollectionManager: Loaded 0 collections in 0.003059 seconds
+[2018.04.24-18.31.50:178][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/Collections/' took 0.01s
+[2018.04.24-18.31.50:178][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/Developers/Dorothy/Collections/' took 0.01s
+[2018.04.24-18.31.50:179][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/Collections/' took 0.01s
+[2018.04.24-18.31.50:179][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.04.24-18.31.50:203][  0]LogContentBrowser: Native class hierarchy populated in 0.0240 seconds. Added 2367 classes and 521 folders.
+[2018.04.24-18.31.50:498][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0017 seconds. Added 0 classes and 0 folders.
+[2018.04.24-18.31.50:768][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2018.04.24-18.31.50:999][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0015 seconds. Added 1 classes and 2 folders.
+[2018.04.24-18.31.51:202][  0]LogSlate: Took 0.000618 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.04.24-18.31.51:207][  0]LogSlate: Took 0.000747 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.04.24-18.31.51:218][  0]LogSlate: Took 0.001730 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.04.24-18.31.51:431][  0]LogRenderer: Reallocating scene render targets to support 1788x776 Format 9 NumSamples 1 (Frame:1).
+[2018.04.24-18.31.51:890][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0016 seconds. Added 1 classes and 2 folders.
+[2018.04.24-18.31.51:890][  0]LogLoad: (Engine Initialization) Total time: 86.86 seconds
+[2018.04.24-18.31.51:890][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.04.24-18.31.51:890][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.04.24-18.31.51:890][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.04.24-18.31.51:931][  0]LogOcInput: OculusInput is initialized
+[2018.04.24-18.31.51:970][  0]LogContentStreaming: Texture pool size now 800 MB
+[2018.04.24-18.31.52:114][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/' took 0.17s
+[2018.04.24-18.31.52:176][  2]LogAssetRegistry: Asset discovery search completed in 32.6473 seconds
+[2018.04.24-18.31.52:181][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2018.04.24-18.31.52:181][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000164 seconds (updated 0 objects)
+[2018.04.24-18.32.06:429][734]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-18.32.06:571][734]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.04.24-18.32.06:571][734]LogHMD: Initializing OVRPlugin session
+[2018.04.24-18.32.06:626][734]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 10:32:06 AM)
+[2018.04.24-18.32.06:626][734]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-18.32.06:927][734]LogPlayLevel: PIE: StaticDuplicateObject took: (0.301062s)
+[2018.04.24-18.32.06:928][734]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-18.32.06:929][734]LogPlayLevel: PIE: World Init took: (0.001181s)
+[2018.04.24-18.32.06:929][734]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.302736s)
+[2018.04.24-18.32.06:961][734]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-18.32.06:971][734]LogInit: FAudioDevice initialized.
+[2018.04.24-18.32.07:013][734]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-18.32.07:107][734]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-14.32.07
+[2018.04.24-18.32.07:108][734]LogWorld: Bringing up level for play took: 0.092658
+[2018.04.24-18.32.07:219][734]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 11 classes and 0 folders.
+[2018.04.24-18.32.07:223][734]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap 1.496
+[2018.04.24-18.32.20:629][ 49]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.21:461][132]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.21:657][151]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.21:845][169]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.22:020][186]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.22:205][204]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.25:528][527]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.25:946][567]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.26:155][587]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.26:334][604]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.26:526][622]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.26:708][639]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.26:955][662]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.42:457][110]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.43:313][195]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.43:494][213]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.45:297][387]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.45:470][404]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.45:655][422]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.47:153][564]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.47:321][580]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.47:489][596]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.51:639][985]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.51:811][  1]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.51:981][ 16]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.52:176][ 33]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.56:475][411]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.56:657][427]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.32.56:858][444]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.01:838][896]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.02:041][915]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.02:233][933]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.02:424][951]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.02:595][967]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.02:755][982]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.02:927][998]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.03:101][ 14]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.08:749][526]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.08:940][544]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.09:165][565]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.09:338][581]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.12:961][908]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.13:813][986]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.33.13:987][  2]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-18.49.09:836][461]LogHotReload: New module detected: UE4Editor-FinalHUDTest-3369.dll
+[2018.04.24-18.49.10:527][464]LogHotReload: Starting Hot-Reload from IDE
+[2018.04.24-18.49.10:536][464]LogSlate: Took 0.001547 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.04.24-18.49.10:949][464]LogClass: Could not find existing class HeadsUpDisplay in package /Script/FinalHUDTest for HotReload, assuming new class
+[2018.04.24-18.49.10:949][464]LogClass: Function EnergyStuff is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function EnvStuff is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function FWStuff is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function GetCurrentCashVal is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function GetCurrentMaterialVal is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function GetCurrentPowerVal is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function GetCurrentWorkforceVal is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function GetTaskIDStatus is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function InfStuff is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function PeopleStuff is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function SetTaskActivity is new.
+[2018.04.24-18.49.10:949][464]LogClass: Function UpdateCurrentVals is new.
+[2018.04.24-18.49.10:952][464]LogHotReload: Re-instancing FinalHUDTestGameModeBase after hot-reload.
+[2018.04.24-18.49.11:034][464]LogHotReload: Re-instancing HeadsUpDisplay after hot-reload.
+[2018.04.24-18.49.11:107][464]LogContentBrowser: Native class hierarchy updated for 'FinalHUDTest' in 0.0010 seconds. Added 4 classes and 2 folders.
+[2018.04.24-18.49.11:109][464]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2018.04.24-18.49.11:214][464]LogContentBrowser: Native class hierarchy populated in 0.0114 seconds. Added 2369 classes and 525 folders.
+[2018.04.24-18.49.11:617][464]Display: HotReload took  1.1s.
+[2018.04.24-18.51.10:291][820]LogHotReload: New module detected: UE4Editor-FinalHUDTest-7643.dll
+[2018.04.24-18.51.10:979][823]LogHotReload: Starting Hot-Reload from IDE
+[2018.04.24-18.51.11:143][823]LogContentBrowser: Native class hierarchy updated for 'FinalHUDTest' in 0.0011 seconds. Added 4 classes and 2 folders.
+[2018.04.24-18.51.11:145][823]Display: HotReload successful (16 functions remapped  0 scriptstructs remapped)
+[2018.04.24-18.51.11:194][823]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 2369 classes and 525 folders.
+[2018.04.24-18.51.11:202][823]Display: HotReload took  0.2s.
+[2018.04.24-18.51.20:828][147]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.04.24-18.51.20:836][147]Candidate modules for hot reload:
+[2018.04.24-18.51.20:836][147]  FinalHUDTest
+[2018.04.24-18.51.20:836][147]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe FinalHUDTest -ModuleWithSuffix FinalHUDTest 2284 Win64 Development -editorrecompile -canskiplink "C:/Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/FinalHUDTest.uproject" ]
+[2018.04.24-18.51.20:840][147]Warning: Starting HotReload took  0.0s.
+[2018.04.24-18.51.21:797][230]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2018.04.24-18.51.30:905][844]CompilerResultsLog: New page: Compilation - Apr 24, 2018, 10:51:30 AM
+[2018.04.24-18.51.30:905][844]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.04.24-18.51.30:905][844]CompilerResultsLog: Creating makefile for hot reloading FinalHUDTest (modules to compile have changed)
+[2018.04.24-18.51.30:905][844]CompilerResultsLog: Compiling game modules for hot reload
+[2018.04.24-18.51.30:905][844]CompilerResultsLog: Target is up to date
+[2018.04.24-18.51.30:905][844]CompilerResultsLog: Total build time: 9.80 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.04.24-18.51.30:905][844]LogMainFrame: MainFrame: Module compiling took 10.077 seconds
+[2018.04.24-18.51.30:934][844]LogContentBrowser: Native class hierarchy populated in 0.0122 seconds. Added 2369 classes and 525 folders.
+[2018.04.24-18.51.30:934][844]Display: HotReload took 10.1s.
+[2018.04.24-18.51.43:752][784]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-18.51.43:769][784]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.04.24-18.51.43:770][784]LogHMD: Initializing OVRPlugin session
+[2018.04.24-18.51.43:795][784]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 10:51:43 AM)
+[2018.04.24-18.51.43:795][784]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-18.51.44:090][784]LogPlayLevel: PIE: StaticDuplicateObject took: (0.295338s)
+[2018.04.24-18.51.44:091][784]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-18.51.44:091][784]LogPlayLevel: PIE: World Init took: (0.001023s)
+[2018.04.24-18.51.44:092][784]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.296754s)
+[2018.04.24-18.51.44:126][784]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-18.51.44:137][784]LogInit: FAudioDevice initialized.
+[2018.04.24-18.51.44:169][784]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-18.51.44:250][784]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-14.51.44
+[2018.04.24-18.51.44:251][784]LogWorld: Bringing up level for play took: 0.081154
+[2018.04.24-18.51.44:254][784]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap 0.527
+[2018.04.24-18.52.24:443][632]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0014 seconds. Added 116 classes and 0 folders.
+[2018.04.24-18.52.25:428][632]LogSlate: Took 0.000419 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.04.24-18.52.25:430][632]LogSlate: Took 0.001484 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.04.24-18.52.41:037][622]LogSlate: Took 0.001409 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.04.24-18.53.12:548][462]LogSlate: Took 0.024645 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2018.04.24-18.54.23:031][651]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/GameLevel/DisasterMap' took 0.030
+[2018.04.24-18.54.23:034][651]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/HUD/PlayerActions/PeopleActions] ([1] browsable assets)...
+[2018.04.24-18.54.23:035][651]OBJ SavePackage: Finished generating thumbnails for package [/Game/HUD/PlayerActions/PeopleActions]
+[2018.04.24-18.54.23:164][651]LogSavePackage: Save=95.68ms
+[2018.04.24-18.54.23:165][651]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions_Auto162DF131A49DAF6C3F7348C9C92150D58.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/Autosaves/Game/HUD/PlayerActions/PeopleActions_Auto1.uasset'
+[2018.04.24-18.54.23:168][651]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/Autosaves/Game/HUD/PlayerActions/PeopleActions_Auto1.uasset
+[2018.04.24-18.54.23:168][651]LogFileHelpers: Auto-saving content packages took 0.135
+[2018.04.24-18.56.54:413][148]LogSlate: Took 0.001532 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2018.04.24-18.58.17:653][860]LogSavePackage: Save=102.29ms
+[2018.04.24-18.58.17:654][860]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions32630D3B40B7BAC89C481795C6DD4581.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-18.58.17:659][860]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-18.58.38:673][291]LogSavePackage: Save=99.77ms
+[2018.04.24-18.58.38:674][291]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions9F09FE5F40A6D9F210DBF581E8DAF81A.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-18.58.38:680][291]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-18.59.49:347][295]LogSavePackage: Save=102.75ms
+[2018.04.24-18.59.49:347][295]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions27C677BA4D9A1571AAEF2CA0CB194714.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-18.59.49:353][295]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-19.00.15:366][699]LogSavePackage: Save=98.81ms
+[2018.04.24-19.00.15:367][699]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions976E445A4F81AA6F5CC18EAFDC8D3766.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-19.00.15:372][699]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-19.04.35:782][237]LogSavePackage: Save=123.70ms
+[2018.04.24-19.04.35:782][237]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActionsE79982C84368D013777D9D8FDF8FF03C.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-19.04.35:796][237]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-19.04.39:864][484]BlueprintLog: New page: Compile PeopleActions
+[2018.04.24-19.04.39:901][484]LogBlueprint: Error: [Compiler PeopleActions] This blueprint (self) is not a HeadsUpDisplay, therefore ' Target ' must have a connection.
+[2018.04.24-19.04.39:945][484]LogBlueprint: Warning: [Compiler PeopleActions] [2054.91] Compile of PeopleActions failed. 1 Fatal Issue(s) 0 Warning(s) [in 80 ms] (/Game/HUD/PlayerActions/PeopleActions.PeopleActions)
+[2018.04.24-19.05.05:362][238]LogSavePackage: Save=127.20ms
+[2018.04.24-19.05.05:362][238]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions8028F4F8443938941438CDAFFD9C9993.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-19.05.05:369][238]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-19.05.08:601][623]BlueprintLog: New page: Compile PeopleActions
+[2018.04.24-19.05.08:638][623]LogBlueprint: Warning: [Compiler PeopleActions] 'Heads Up Display' does not inherit from 'Player Controller' ( Cast To HeadsUpDisplay  would always fail).
+[2018.04.24-19.05.08:670][623]LogBlueprint: Warning: [Compiler PeopleActions] [2083.64] Compile of PeopleActions successful, but with 1 Warning(s) [in 68 ms] (/Game/HUD/PlayerActions/PeopleActions.PeopleActions)
+[2018.04.24-19.05.35:420][702]BlueprintLog: New page: Compile PeopleActions
+[2018.04.24-19.05.40:751][246]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-19.05.40:777][246]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.04.24-19.05.40:778][246]LogHMD: Initializing OVRPlugin session
+[2018.04.24-19.05.40:802][246]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 11:05:40 AM)
+[2018.04.24-19.05.40:802][246]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-19.05.41:102][246]LogPlayLevel: PIE: StaticDuplicateObject took: (0.300276s)
+[2018.04.24-19.05.41:103][246]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-19.05.41:104][246]LogPlayLevel: PIE: World Init took: (0.001083s)
+[2018.04.24-19.05.41:104][246]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.301775s)
+[2018.04.24-19.05.41:143][246]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-19.05.41:154][246]LogInit: FAudioDevice initialized.
+[2018.04.24-19.05.41:188][246]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-19.05.41:269][246]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-15.05.41
+[2018.04.24-19.05.41:269][246]LogWorld: Bringing up level for play took: 0.081205
+[2018.04.24-19.05.41:273][246]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap -0.454
+[2018.04.24-19.06.03:502][215]LogRenderer: Reallocating scene render targets to support 1788x792 Format 9 NumSamples 1 (Frame:6837).
+[2018.04.24-19.06.03:557][216]LogRenderer: Reallocating scene render targets to support 1788x860 Format 9 NumSamples 1 (Frame:6839).
+[2018.04.24-19.06.03:610][217]LogRenderer: Reallocating scene render targets to support 1788x940 Format 9 NumSamples 1 (Frame:6841).
+[2018.04.24-19.06.03:663][218]LogRenderer: Reallocating scene render targets to support 1788x944 Format 9 NumSamples 1 (Frame:6843).
+[2018.04.24-19.06.03:714][219]LogRenderer: Reallocating scene render targets to support 1788x956 Format 9 NumSamples 1 (Frame:6845).
+[2018.04.24-19.06.03:766][220]LogRenderer: Reallocating scene render targets to support 1788x972 Format 9 NumSamples 1 (Frame:6847).
+[2018.04.24-19.06.03:828][221]LogRenderer: Reallocating scene render targets to support 1788x996 Format 9 NumSamples 1 (Frame:6849).
+[2018.04.24-19.06.03:886][222]LogRenderer: Reallocating scene render targets to support 1788x1004 Format 9 NumSamples 1 (Frame:6851).
+[2018.04.24-19.06.05:329][330]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-19.06.05:350][330]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.04.24-19.06.05:350][330]LogHMD: Initializing OVRPlugin session
+[2018.04.24-19.06.05:378][330]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 11:06:05 AM)
+[2018.04.24-19.06.05:378][330]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-19.06.05:686][330]LogPlayLevel: PIE: StaticDuplicateObject took: (0.308008s)
+[2018.04.24-19.06.05:687][330]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-19.06.05:687][330]LogPlayLevel: PIE: World Init took: (0.000850s)
+[2018.04.24-19.06.05:687][330]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.309239s)
+[2018.04.24-19.06.05:724][330]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-19.06.05:734][330]LogInit: FAudioDevice initialized.
+[2018.04.24-19.06.05:770][330]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-19.06.05:850][330]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-15.06.05
+[2018.04.24-19.06.05:851][330]LogWorld: Bringing up level for play took: 0.080344
+[2018.04.24-19.06.05:855][330]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap 0.128
+[2018.04.24-19.06.26:036][218]LogSavePackage: Save=128.20ms
+[2018.04.24-19.06.26:036][218]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions039B3E5843DA4FB5CBB01B8BE9066357.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-19.06.26:043][218]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-19.06.29:472][550]LogSavePackage: Save=122.67ms
+[2018.04.24-19.06.29:472][550]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions8DDFFEDE4EF74CB03E4E19ACDAC880D9.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-19.06.29:475][550]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-19.06.30:331][643]BlueprintLog: New page: Compile PeopleActions
+[2018.04.24-19.06.32:265][813]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-19.06.32:291][813]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.04.24-19.06.32:291][813]LogHMD: Initializing OVRPlugin session
+[2018.04.24-19.06.32:315][813]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 11:06:32 AM)
+[2018.04.24-19.06.32:315][813]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-19.06.32:596][813]LogPlayLevel: PIE: StaticDuplicateObject took: (0.280544s)
+[2018.04.24-19.06.32:596][813]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-19.06.32:597][813]LogPlayLevel: PIE: World Init took: (0.000859s)
+[2018.04.24-19.06.32:597][813]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.281807s)
+[2018.04.24-19.06.32:636][813]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-19.06.32:646][813]LogInit: FAudioDevice initialized.
+[2018.04.24-19.06.32:681][813]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-19.06.32:760][813]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-15.06.32
+[2018.04.24-19.06.32:761][813]LogWorld: Bringing up level for play took: 0.078633
+[2018.04.24-19.06.32:764][813]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap 1.037
+[2018.04.24-19.06.35:972][108]LogSlate: Took 0.001335 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.04.24-19.07.39:255][  0]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-19.07.39:275][  0]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.04.24-19.07.39:275][  0]LogHMD: Initializing OVRPlugin session
+[2018.04.24-19.07.39:304][  0]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 11:07:39 AM)
+[2018.04.24-19.07.39:304][  0]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-19.07.39:582][  0]LogPlayLevel: PIE: StaticDuplicateObject took: (0.277844s)
+[2018.04.24-19.07.39:583][  0]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-19.07.39:583][  0]LogPlayLevel: PIE: World Init took: (0.000878s)
+[2018.04.24-19.07.39:583][  0]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.279370s)
+[2018.04.24-19.07.39:623][  0]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-19.07.39:633][  0]LogInit: FAudioDevice initialized.
+[2018.04.24-19.07.39:667][  0]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-19.07.39:748][  0]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-15.07.39
+[2018.04.24-19.07.39:749][  0]LogWorld: Bringing up level for play took: 0.081565
+[2018.04.24-19.07.39:752][  0]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap 0.025
+[2018.04.24-19.08.53:928][608]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-19.08.53:957][608]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.04.24-19.08.53:979][608]LogPlayLevel: [PlayLevel] Compiling TopLevel before play...
+[2018.04.24-19.08.54:164][608]LogPlayLevel: PlayLevel: Blueprint regeneration took 207 ms (1 blueprints)
+[2018.04.24-19.08.54:165][608]LogHMD: Initializing OVRPlugin session
+[2018.04.24-19.08.54:189][608]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 11:08:54 AM)
+[2018.04.24-19.08.54:189][608]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-19.08.54:480][608]LogPlayLevel: PIE: StaticDuplicateObject took: (0.291038s)
+[2018.04.24-19.08.54:481][608]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-19.08.54:482][608]LogPlayLevel: PIE: World Init took: (0.000987s)
+[2018.04.24-19.08.54:482][608]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.292672s)
+[2018.04.24-19.08.54:520][608]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-19.08.54:530][608]LogInit: FAudioDevice initialized.
+[2018.04.24-19.08.54:565][608]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-19.08.54:645][608]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-15.08.54
+[2018.04.24-19.08.54:646][608]LogWorld: Bringing up level for play took: 0.080219
+[2018.04.24-19.08.54:650][608]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap 0.922
+[2018.04.24-19.09.28:152][478]LogSavePackage: Save=130.49ms
+[2018.04.24-19.09.28:152][478]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/PeopleActions2B43AE6644D7C608A7A5E2B3033FA572.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset'
+[2018.04.24-19.09.28:159][478]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/PeopleActions.uasset
+[2018.04.24-19.10.00:316][ 79]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-19.10.00:340][ 79]BlueprintLog: New page: Pre-Play auto-recompile
+[2018.04.24-19.10.00:363][ 79]LogPlayLevel: [PlayLevel] Compiling TopLevel before play...
+[2018.04.24-19.10.00:537][ 79]LogPlayLevel: [PlayLevel] Compiling PeopleActions before play...
+[2018.04.24-19.10.00:711][ 79]LogPlayLevel: PlayLevel: Blueprint regeneration took 370 ms (2 blueprints)
+[2018.04.24-19.10.00:711][ 79]LogHMD: Initializing OVRPlugin session
+[2018.04.24-19.10.00:736][ 79]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 11:10:00 AM)
+[2018.04.24-19.10.00:736][ 79]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-19.10.01:027][ 79]LogPlayLevel: PIE: StaticDuplicateObject took: (0.291198s)
+[2018.04.24-19.10.01:028][ 79]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-19.10.01:029][ 79]LogPlayLevel: PIE: World Init took: (0.000898s)
+[2018.04.24-19.10.01:029][ 79]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.292761s)
+[2018.04.24-19.10.01:068][ 79]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-19.10.01:078][ 79]LogInit: FAudioDevice initialized.
+[2018.04.24-19.10.01:111][ 79]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-19.10.01:194][ 79]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-15.10.01
+[2018.04.24-19.10.01:195][ 79]LogWorld: Bringing up level for play took: 0.083091
+[2018.04.24-19.10.01:198][ 79]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap 1.471
+[2018.04.24-19.10.01:211][ 79]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:531][ 80]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:560][ 81]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:576][ 82]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:592][ 83]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:608][ 84]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:624][ 85]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:640][ 86]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:657][ 87]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:673][ 88]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:689][ 89]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:705][ 90]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:721][ 91]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:739][ 92]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:758][ 93]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:774][ 94]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:790][ 95]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:806][ 96]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:823][ 97]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:839][ 98]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:855][ 99]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:871][100]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:887][101]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:903][102]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:919][103]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:935][104]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:951][105]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:967][106]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.01:983][107]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:000][108]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:016][109]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:033][110]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:049][111]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:065][112]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:082][113]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:099][114]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:116][115]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:133][116]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:150][117]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:167][118]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:183][119]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:200][120]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:217][121]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:233][122]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:250][123]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:267][124]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:284][125]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:300][126]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:317][127]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:334][128]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:351][129]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:367][130]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:384][131]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:401][132]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:418][133]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:435][134]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:452][135]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:469][136]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:485][137]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:502][138]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:519][139]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:536][140]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:553][141]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:571][142]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:588][143]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:606][144]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:623][145]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:640][146]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:658][147]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:675][148]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:692][149]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:709][150]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:727][151]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:744][152]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:761][153]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:779][154]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:796][155]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:813][156]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:831][157]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:848][158]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:865][159]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:882][160]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:899][161]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:916][162]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:933][163]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:951][164]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:968][165]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.02:985][166]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:002][167]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:020][168]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:037][169]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:055][170]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:072][171]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:089][172]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:106][173]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:123][174]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:141][175]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:158][176]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:175][177]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:192][178]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:210][179]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:227][180]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:244][181]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:262][182]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:279][183]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:296][184]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:313][185]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:330][186]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:348][187]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:365][188]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:382][189]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:399][190]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:417][191]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:434][192]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:450][193]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:467][194]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:484][195]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:501][196]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:518][197]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:535][198]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:552][199]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:569][200]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:587][201]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:604][202]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:621][203]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:639][204]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:656][205]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:673][206]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:691][207]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:708][208]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:726][209]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:743][210]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:760][211]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:778][212]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:795][213]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:812][214]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:830][215]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:847][216]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:864][217]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:882][218]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:899][219]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:916][220]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:933][221]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:951][222]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:968][223]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.03:985][224]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:002][225]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:020][226]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:037][227]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:054][228]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:071][229]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:088][230]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:106][231]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:123][232]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:140][233]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:157][234]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:174][235]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:191][236]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:208][237]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:225][238]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:242][239]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:259][240]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:276][241]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:293][242]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:310][243]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:327][244]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:344][245]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:362][246]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:379][247]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:396][248]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:413][249]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:431][250]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:448][251]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:465][252]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:482][253]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:499][254]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:517][255]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:534][256]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:551][257]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:568][258]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:585][259]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:601][260]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:618][261]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:635][262]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:652][263]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:669][264]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:686][265]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:703][266]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:720][267]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:737][268]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:754][269]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:771][270]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:789][271]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:807][272]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:824][273]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:841][274]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:858][275]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:876][276]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:893][277]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:910][278]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:928][279]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:945][280]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:962][281]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:980][282]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.04:997][283]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:014][284]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:031][285]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:048][286]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:066][287]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:083][288]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:100][289]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:117][290]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:134][291]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:152][292]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:169][293]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:187][294]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:204][295]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:221][296]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:238][297]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:256][298]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:273][299]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:290][300]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:307][301]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:325][302]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:342][303]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:359][304]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:377][305]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:394][306]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:412][307]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:429][308]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:446][309]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:464][310]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:481][311]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:498][312]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:515][313]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:532][314]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:550][315]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:567][316]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:584][317]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:602][318]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:619][319]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:636][320]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:654][321]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:671][322]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:688][323]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:706][324]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:723][325]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:741][326]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:758][327]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:775][328]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:793][329]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:810][330]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:827][331]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:845][332]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:862][333]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:879][334]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:896][335]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:914][336]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:931][337]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:948][338]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:964][339]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:981][340]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.05:998][341]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:015][342]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:032][343]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:049][344]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:066][345]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:084][346]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:101][347]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:118][348]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:135][349]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:152][350]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:169][351]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:186][352]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:203][353]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:220][354]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:237][355]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:254][356]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:272][357]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:289][358]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:306][359]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:323][360]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:340][361]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:357][362]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:374][363]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:391][364]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:409][365]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:426][366]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:442][367]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:459][368]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:476][369]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:493][370]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:510][371]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:527][372]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:543][373]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:560][374]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:577][375]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:594][376]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:612][377]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:629][378]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:647][379]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:664][380]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:682][381]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:698][382]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:715][383]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:733][384]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:750][385]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:767][386]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:784][387]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:801][388]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:818][389]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:835][390]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:852][391]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:869][392]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:886][393]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:903][394]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:920][395]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:937][396]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:954][397]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:971][398]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.06:988][399]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:005][400]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:022][401]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:039][402]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:056][403]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:073][404]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:089][405]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:106][406]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:124][407]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:141][408]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:158][409]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:175][410]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:193][411]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:210][412]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:227][413]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:244][414]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:261][415]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:278][416]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:295][417]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:312][418]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:329][419]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:346][420]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:363][421]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:380][422]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:397][423]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:413][424]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.07:430][425]LogBlueprintUserMessages: [TopLevel_C_2] Power Cast Failed!
+[2018.04.24-19.10.23:894][142]LogSlate: Took 0.000407 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.04.24-19.10.25:166][142]LogSavePackage: Save=4873.28ms
+[2018.04.24-19.10.25:166][142]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/DisasterMapBBE2C0F4460533DD2F5AA1B96AAC3C03.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/GameLevel/DisasterMap.umap'
+[2018.04.24-19.10.25:174][142]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/GameLevel/DisasterMap.umap
+[2018.04.24-19.10.26:399][205]LogTemp: Repeating last play command: Selected Viewport
+[2018.04.24-19.10.26:421][205]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.04.24-19.10.26:422][205]LogHMD: Initializing OVRPlugin session
+[2018.04.24-19.10.26:445][205]PIE: New page: PIE session: DisasterMap (Apr 24, 2018, 11:10:26 AM)
+[2018.04.24-19.10.26:446][205]LogPlayLevel: Creating play world package: /Game/GameLevel/UEDPIE_0_DisasterMap
+[2018.04.24-19.10.26:732][205]LogPlayLevel: PIE: StaticDuplicateObject took: (0.286778s)
+[2018.04.24-19.10.26:733][205]LogAIModule: Creating AISystem for world DisasterMap
+[2018.04.24-19.10.26:734][205]LogPlayLevel: PIE: World Init took: (0.001093s)
+[2018.04.24-19.10.26:734][205]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel/DisasterMap.DisasterMap to /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap (0.288632s)
+[2018.04.24-19.10.26:780][205]LogInit: XAudio2 using 'Headphones (Rift Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.04.24-19.10.26:790][205]LogInit: FAudioDevice initialized.
+[2018.04.24-19.10.26:825][205]LogLoad: Game class is 'BP_HUDTestGameModeBase_C'
+[2018.04.24-19.10.26:904][205]LogWorld: Bringing World /Game/GameLevel/UEDPIE_0_DisasterMap.DisasterMap up for play (max tick rate 0) at 2018.04.24-15.10.26
+[2018.04.24-19.10.26:905][205]LogWorld: Bringing up level for play took: 0.079866
+[2018.04.24-19.10.26:909][205]PIE: Play in editor start time for /Game/GameLevel/UEDPIE_0_DisasterMap 1.182
+[2018.04.24-19.10.32:594][553]LogBlueprintUserMessages: [FormBase] Hello
+[2018.04.24-19.11.11:639][628]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2018.04.24-19.13.57:230][295]LogSavePackage: Save=47.13ms
+[2018.04.24-19.13.57:231][295]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/EnergyActionsA30E92F54E30063E7D710BA1C4A6CB0D.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/EnergyActions.uasset'
+[2018.04.24-19.13.57:237][295]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/EnergyActions.uasset
+[2018.04.24-19.16.46:829][104]LogSavePackage: Save=43.08ms
+[2018.04.24-19.16.46:829][104]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/EnergyActionsD6BD4C5E4F084F59B83ADA895148ACBB.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/EnergyActions.uasset'
+[2018.04.24-19.16.46:844][104]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/EnergyActions.uasset
+[2018.04.24-19.17.48:817][390]LogSavePackage: Save=52.84ms
+[2018.04.24-19.17.48:817][390]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/EnergyActions5A4930F64D92E9E80D99BDAE386BEC6F.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/EnergyActions.uasset'
+[2018.04.24-19.17.48:824][390]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Content/HUD/PlayerActions/EnergyActions.uasset
+[2018.04.24-19.20.36:399][368]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/GameLevel/DisasterMap' took 0.028
+[2018.04.24-19.20.36:402][368]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/HUD/BP_HUDTestGameModeBase] ([1] browsable assets)...
+[2018.04.24-19.20.36:402][368]OBJ SavePackage: Finished generating thumbnails for package [/Game/HUD/BP_HUDTestGameModeBase]
+[2018.04.24-19.20.36:445][368]LogSavePackage: Save=8.99ms
+[2018.04.24-19.20.36:445][368]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/BP_HUDTestGameModeBase_Auto238E543FD4540776C9F6117B5C2C26A02.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/Autosaves/Game/HUD/BP_HUDTestGameModeBase_Auto2.uasset'
+[2018.04.24-19.20.36:448][368]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/Autosaves/Game/HUD/BP_HUDTestGameModeBase_Auto2.uasset
+[2018.04.24-19.20.36:450][368]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/HUD/TopLevel] ([1] browsable assets)...
+[2018.04.24-19.20.36:450][368]OBJ SavePackage: Finished generating thumbnails for package [/Game/HUD/TopLevel]
+[2018.04.24-19.20.36:627][368]LogSavePackage: Save=150.89ms
+[2018.04.24-19.20.36:628][368]LogSavePackage: Moving '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/TopLevel_Auto2E31F426D4E132CBB852F9C840B4D6A18.tmp' to '../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/Autosaves/Game/HUD/TopLevel_Auto2.uasset'
+[2018.04.24-19.20.36:631][368]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Dorothy/Desktop/Patrick_May_Sriram_Baireddi_Honr399_Final/HONR399Final/FinalHUDTest/Saved/Autosaves/Game/HUD/TopLevel_Auto2.uasset
+[2018.04.24-19.20.36:631][368]LogFileHelpers: Auto-saving content packages took 0.230
+[2018.04.24-19.36.40:339][260]LogHotReload: New module detected: UE4Editor-FinalHUDTest-6186.dll
+[2018.04.24-19.36.41:015][263]LogHotReload: Starting Hot-Reload from IDE
+[2018.04.24-19.36.41:445][263]LogClass: Could not find existing class HeadsUpDisplay in package /Script/FinalHUDTest for HotReload, assuming new class
+[2018.04.24-19.36.41:446][263]LogClass: Function EnergyStuff is new.
+[2018.04.24-19.36.41:446][263]LogClass: Function EnvStuff is new.
+[2018.04.24-19.36.41:446][263]LogClass: Function FWStuff is new.
+[2018.04.24-19.36.41:446][263]LogClass: Function GetCurrentCashVal is new.
+[2018.04.24-19.36.41:446][263]LogClass: Function GetCurrentMaterialVal is new.
+[2018.04.24-19.36.41:446][263]LogClass: Function GetCurrentPowerVal is new.
+[2018.04.24-19.36.41:446][263]LogClass: Function GetCurrentWorkforceVal is new.
+[2018.04.24-19.36.41:446][263]LogClass: Function GetTaskIDStatus is new.
+[2018.04.24-19.36.41:446][263]LogClass: Function InfStuff is new.
+[2018.04.24-19.36.41:447][263]LogClass: Function PeopleStuff is new.
+[2018.04.24-19.36.41:447][263]LogClass: Function SetTaskActivity is new.
+[2018.04.24-19.36.41:447][263]LogClass: Function UpdateCurrentVals is new.
+[2018.04.24-19.36.41:448][263]LogClass: Could not find existing class LocalGovActor in package /Script/FinalHUDTest for HotReload, assuming new class
+[2018.04.24-19.36.41:448][263]LogClass: Function localGovSendBlockingInfo is new.
+[2018.04.24-19.36.41:448][263]LogClass: Function localGovSendTagUpdate is new.
+[2018.04.24-19.36.41:449][263]LogClass: Function printCurrentActions is new.
+[2018.04.24-19.36.41:449][263]LogClass: Function updateLocalGovPriorities is new.
+[2018.04.24-19.36.41:449][263]LogWindows: Windows GetLastError: The operation completed successfully. (0)
+[2018.04.24-19.36.42:290][263]LogWindows: Error: === Critical error: ===
+[2018.04.24-19.36.42:290][263]LogWindows: Error: 
+[2018.04.24-19.36.42:290][263]LogWindows: Error: Fatal error: [File:D:\Build\++UE4+Release-4.18+Compile\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectGlobals.cpp] [Line: 2486] 
+[2018.04.24-19.36.42:290][263]LogWindows: Error: UObject() constructor called but it's not the object that's currently being constructed with NewObject. Maybe you are trying to construct it on the stack, which is not supported.
+[2018.04.24-19.36.42:290][263]LogWindows: Error: 
+[2018.04.24-19.36.42:290][263]LogWindows: Error: 
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x0000000077D14008 KERNELBASE.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000501276D4 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000004053330B UE4Editor-Core.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000404C47F9 UE4Editor-Core.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000003C1D642D UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000003C61E48E UE4Editor-Engine.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x0000000050EC3C2F UE4Editor-FinalHUDTest-6186.dll!ALocalGovActor::ALocalGovActor() [c:\users\dorothy\desktop\patrick_may_sriram_baireddi_honr399_final\honr399final\finalhudtest\source\finalhudtest\localgovactor.cpp:9]
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x0000000050EC2BDF UE4Editor-FinalHUDTest-6186.dll!AHeadsUpDisplay::AHeadsUpDisplay() [c:\users\dorothy\desktop\patrick_may_sriram_baireddi_honr399_final\honr399final\finalhudtest\source\finalhudtest\headsupdisplay.cpp:8]
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000003BFB05CD UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000003C2291B0 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000003C20B41F UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000003BFB2547 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000004036E6C0 UE4Editor-Core.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000405C2282 UE4Editor-Core.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000405C1593 UE4Editor-Core.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x000000002710309F UE4Editor-HotReload.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x0000000027102D1B UE4Editor-HotReload.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000271141BA UE4Editor-HotReload.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000403B22B8 UE4Editor-Core.dll!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000F0DE7A32 UE4Editor.exe!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000F0DF5430 UE4Editor.exe!UnknownFunction []
+[2018.04.24-19.36.42:290][263]LogWindows: Error: [Callstack] 0x00000000F0DF54AA UE4Editor.exe!UnknownFunction []
+[2018.04.24-19.36.42:291][263]LogWindows: Error: [Callstack] 0x00000000F0E02379 UE4Editor.exe!UnknownFunction []
+[2018.04.24-19.36.42:291][263]LogWindows: Error: [Callstack] 0x00000000F0E03D57 UE4Editor.exe!UnknownFunction []
+[2018.04.24-19.36.42:291][263]LogWindows: Error: [Callstack] 0x0000000079B11FE4 KERNEL32.DLL!UnknownFunction []
+[2018.04.24-19.36.42:291][263]LogWindows: Error: [Callstack] 0x000000007B96F061 ntdll.dll!UnknownFunction []
+[2018.04.24-19.36.42:291][263]LogWindows: Error: [Callstack] 0x000000007B96F061 ntdll.dll!UnknownFunction []
+[2018.04.24-19.36.42:291][263]LogWindows: Error: 
+[2018.04.24-19.36.42:310][263]LogExit: Executing StaticShutdownAfterError
+[2018.04.24-19.36.42:330][263]LogWindows: FPlatformMisc::RequestExit(1)
+[2018.04.24-19.36.42:330][263]Log file closed, 04/24/18 15:36:42

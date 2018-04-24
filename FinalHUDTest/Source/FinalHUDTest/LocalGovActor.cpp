@@ -57,7 +57,7 @@ void ALocalGovActor::Tick(float DeltaTime)
 
 }
 
-void ALocalGovActor::updateLocalGovPriorities(TSubclassOf<class AHUDController> PlayerController)
+void ALocalGovActor::updateLocalGovPriorities(AHeadsUpDisplay* PlayerController)
 {
 	//Initialize RNG
 	std::random_device rd;     // only used once to initialise (seed) engine
@@ -270,16 +270,16 @@ void ALocalGovActor::updateLocalGovPriorities(TSubclassOf<class AHUDController> 
 	}
 }
 
-void ALocalGovActor::localGovSendBlockingInfo(TSubclassOf<class AHUDController> PlayerController)
+void ALocalGovActor::localGovSendBlockingInfo(AHeadsUpDisplay* PlayerController)
 {
 }
 
-void ALocalGovActor::localGovSendTagUpdate(TSubclassOf<class AHUDController> PlayerController)
+void ALocalGovActor::localGovSendTagUpdate(AHeadsUpDisplay* PlayerController)
 {
 
 }
 
-void ALocalGovActor::printCurrentActions(TSubclassOf<class AHUDController> PlayerController)
+void ALocalGovActor::printCurrentActions(AHeadsUpDisplay* PlayerController)
 {
 	if (GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("People: %d Energy: %d Food/Water: %d EnviroAction: %d Infrastructure: %d"), peopleActions.actionID, energyActions.actionID, foodWaterActions.actionID, environmentActions.actionID, infrastructureActions.actionID));

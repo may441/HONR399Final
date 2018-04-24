@@ -8,7 +8,7 @@
 #include "ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class AHUDController;
+class AHeadsUpDisplay;
 #ifdef FINALHUDTEST_LocalGovActor_generated_h
 #error "LocalGovActor.generated.h already included, missing '#pragma once' in LocalGovActor.h"
 #endif
@@ -18,7 +18,7 @@ class AHUDController;
  \
 	DECLARE_FUNCTION(execprintCurrentActions) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->printCurrentActions(Z_Param_PlayerController); \
@@ -27,7 +27,7 @@ class AHUDController;
  \
 	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->localGovSendTagUpdate(Z_Param_PlayerController); \
@@ -36,7 +36,7 @@ class AHUDController;
  \
 	DECLARE_FUNCTION(execlocalGovSendBlockingInfo) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->localGovSendBlockingInfo(Z_Param_PlayerController); \
@@ -45,7 +45,7 @@ class AHUDController;
  \
 	DECLARE_FUNCTION(execupdateLocalGovPriorities) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->updateLocalGovPriorities(Z_Param_PlayerController); \
@@ -57,7 +57,7 @@ class AHUDController;
  \
 	DECLARE_FUNCTION(execprintCurrentActions) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->printCurrentActions(Z_Param_PlayerController); \
@@ -66,7 +66,7 @@ class AHUDController;
  \
 	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->localGovSendTagUpdate(Z_Param_PlayerController); \
@@ -75,7 +75,7 @@ class AHUDController;
  \
 	DECLARE_FUNCTION(execlocalGovSendBlockingInfo) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->localGovSendBlockingInfo(Z_Param_PlayerController); \
@@ -84,7 +84,7 @@ class AHUDController;
  \
 	DECLARE_FUNCTION(execupdateLocalGovPriorities) \
 	{ \
-		P_GET_OBJECT(UClass,Z_Param_PlayerController); \
+		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->updateLocalGovPriorities(Z_Param_PlayerController); \

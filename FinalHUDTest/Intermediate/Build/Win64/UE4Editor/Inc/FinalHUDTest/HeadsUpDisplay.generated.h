@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FINALHUDTEST_HeadsUpDisplay_generated_h
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_RPC_WRAPPERS \
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execInfStuff) \
 	{ \
@@ -73,6 +73,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetTaskIDStatus) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_taskID); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->GetTaskIDStatus(Z_Param_taskID); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetTaskActivity) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_activityID); \
@@ -116,7 +125,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execInfStuff) \
 	{ \
@@ -176,6 +185,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetTaskIDStatus) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_taskID); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->GetTaskIDStatus(Z_Param_taskID); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetTaskActivity) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_activityID); \
@@ -219,7 +237,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_INCLASS_NO_PURE_DECLS \
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAHeadsUpDisplay(); \
 	friend FINALHUDTEST_API class UClass* Z_Construct_UClass_AHeadsUpDisplay(); \
@@ -229,7 +247,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_INCLASS \
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_INCLASS \
 private: \
 	static void StaticRegisterNativesAHeadsUpDisplay(); \
 	friend FINALHUDTEST_API class UClass* Z_Construct_UClass_AHeadsUpDisplay(); \
@@ -239,7 +257,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_STANDARD_CONSTRUCTORS \
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AHeadsUpDisplay(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AHeadsUpDisplay) \
@@ -252,7 +270,7 @@ private: \
 public:
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_ENHANCED_CONSTRUCTORS \
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AHeadsUpDisplay(AHeadsUpDisplay&&); \
@@ -263,26 +281,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AHeadsUpDisplay); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AHeadsUpDisplay)
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_PRIVATE_PROPERTY_OFFSET
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_9_PROLOG
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_GENERATED_BODY_LEGACY \
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_PRIVATE_PROPERTY_OFFSET
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_111_PROLOG
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_PRIVATE_PROPERTY_OFFSET \
-	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_RPC_WRAPPERS \
-	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_INCLASS \
-	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_STANDARD_CONSTRUCTORS \
+	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_PRIVATE_PROPERTY_OFFSET \
+	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_RPC_WRAPPERS \
+	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_INCLASS \
+	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_GENERATED_BODY \
+#define FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_PRIVATE_PROPERTY_OFFSET \
-	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_INCLASS_NO_PURE_DECLS \
-	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_12_ENHANCED_CONSTRUCTORS \
+	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_PRIVATE_PROPERTY_OFFSET \
+	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_RPC_WRAPPERS_NO_PURE_DECLS \
+	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_INCLASS_NO_PURE_DECLS \
+	FinalHUDTest_Source_FinalHUDTest_HeadsUpDisplay_h_114_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

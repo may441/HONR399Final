@@ -24,6 +24,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentMaterialVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentPowerVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentWorkforceVal();
+	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetTaskIDStatus();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_InfStuff();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_PeopleStuff();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_SetTaskActivity();
@@ -40,6 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 			{ "GetCurrentMaterialVal", (Native)&AHeadsUpDisplay::execGetCurrentMaterialVal },
 			{ "GetCurrentPowerVal", (Native)&AHeadsUpDisplay::execGetCurrentPowerVal },
 			{ "GetCurrentWorkforceVal", (Native)&AHeadsUpDisplay::execGetCurrentWorkforceVal },
+			{ "GetTaskIDStatus", (Native)&AHeadsUpDisplay::execGetTaskIDStatus },
 			{ "InfStuff", (Native)&AHeadsUpDisplay::execInfStuff },
 			{ "PeopleStuff", (Native)&AHeadsUpDisplay::execPeopleStuff },
 			{ "SetTaskActivity", (Native)&AHeadsUpDisplay::execSetTaskActivity },
@@ -227,6 +229,34 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetTaskIDStatus()
+	{
+		struct HeadsUpDisplay_eventGetTaskIDStatus_Parms
+		{
+			int32 taskID;
+			bool ReturnValue;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			auto NewProp_ReturnValue_SetBit = [](void* Obj){ ((HeadsUpDisplay_eventGetTaskIDStatus_Parms*)Obj)->ReturnValue = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(HeadsUpDisplay_eventGetTaskIDStatus_Parms), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_ReturnValue_SetBit)>::SetBit, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_taskID = { UE4CodeGen_Private::EPropertyClass::Int, "taskID", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(HeadsUpDisplay_eventGetTaskIDStatus_Parms, taskID), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ReturnValue,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_taskID,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "Game State Access" },
+				{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeadsUpDisplay, "GetTaskIDStatus", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(HeadsUpDisplay_eventGetTaskIDStatus_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_InfStuff()
 	{
 		struct HeadsUpDisplay_eventInfStuff_Parms
@@ -348,6 +378,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentMaterialVal, "GetCurrentMaterialVal" }, // 3949681773
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentPowerVal, "GetCurrentPowerVal" }, // 1021705637
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentWorkforceVal, "GetCurrentWorkforceVal" }, // 2504279909
+				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetTaskIDStatus, "GetTaskIDStatus" }, // 1086480555
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_InfStuff, "InfStuff" }, // 330293635
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_PeopleStuff, "PeopleStuff" }, // 193585317
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_SetTaskActivity, "SetTaskActivity" }, // 4134828790
@@ -494,7 +525,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHeadsUpDisplay, 4044007736);
+	IMPLEMENT_CLASS(AHeadsUpDisplay, 2458069437);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AHeadsUpDisplay(Z_Construct_UClass_AHeadsUpDisplay, &AHeadsUpDisplay::StaticClass, TEXT("/Script/FinalHUDTest"), TEXT("AHeadsUpDisplay"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AHeadsUpDisplay);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

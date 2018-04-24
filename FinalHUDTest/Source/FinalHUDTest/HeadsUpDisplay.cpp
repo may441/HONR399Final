@@ -78,10 +78,56 @@ void AHeadsUpDisplay::SetTaskActivity(int activityID, bool enable)
 
 void AHeadsUpDisplay::UpdateCurrentVals()
 {
+	localGovActions.localGovSendBlockingInfo(this);
+	localGovActions.localGovSendTagUpdate(this);
+
 	CurrentCashVal = ProjCashVal;
 	CurrentMaterialVal = ProjMaterialVal;
 	CurrentWorkforceVal = ProjWorkforceVal;
 	CurrentPowerVal = ProjPowerVal;
+
+	//Prepare Local Government actions for next action
+	localGovActions.updateLocalGovPriorities(this);
+
+}
+
+bool AHeadsUpDisplay::GetTaskIDStatus(int taskID)
+{
+	int category = taskID / 100;
+	int ID = taskID % 100 - 1;
+	int value = 0;
+	if (category == 1)
+	{
+		value = PeopleCheck[ID];
+	}
+	else if (category == 2)
+	{
+		value = EnergyCheck[ID];
+	}
+	else if (category == 3)
+	{
+		value = FWCheck[ID];
+	}
+	else if (category == 4)
+	{
+		value = EnvCheck[ID];
+	}
+	else if (category == 5)
+	{
+		value = InfCheck[ID];
+	}
+	else
+	{
+		value = 0;
+	}
+
+	if (value == 1)
+	{
+		return true;
+	}
+
+	return false;
+
 }
 
 void AHeadsUpDisplay::PeopleStuff(int ID, bool enable)

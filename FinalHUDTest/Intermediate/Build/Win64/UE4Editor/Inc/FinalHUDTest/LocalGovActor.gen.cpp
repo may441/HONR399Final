@@ -18,8 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeLocalGovActor() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_FinalHUDTest();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_ALocalGovActor_localGovSendBlockingInfo();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	FINALHUDTEST_API UClass* Z_Construct_UClass_AHUDController_NoRegister();
+	FINALHUDTEST_API UClass* Z_Construct_UClass_AHeadsUpDisplay_NoRegister();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_ALocalGovActor_localGovSendTagUpdate();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_ALocalGovActor_printCurrentActions();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_ALocalGovActor_updateLocalGovPriorities();
@@ -39,12 +38,12 @@ void EmptyLinkFunctionForGeneratedCodeLocalGovActor() {}
 	{
 		struct LocalGovActor_eventlocalGovSendBlockingInfo_Parms
 		{
-			TSubclassOf<AHUDController>  PlayerController;
+			AHeadsUpDisplay* PlayerController;
 		};
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			static const UE4CodeGen_Private::FClassPropertyParams NewProp_PlayerController = { UE4CodeGen_Private::EPropertyClass::Class, "PlayerController", RF_Public|RF_Transient|RF_MarkAsNative, 0x0014000000000080, 1, nullptr, STRUCT_OFFSET(LocalGovActor_eventlocalGovSendBlockingInfo_Parms, PlayerController), Z_Construct_UClass_AHUDController_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerController = { UE4CodeGen_Private::EPropertyClass::Object, "PlayerController", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(LocalGovActor_eventlocalGovSendBlockingInfo_Parms, PlayerController), Z_Construct_UClass_AHeadsUpDisplay_NoRegister, METADATA_PARAMS(nullptr, 0) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PlayerController,
 			};
@@ -63,12 +62,12 @@ void EmptyLinkFunctionForGeneratedCodeLocalGovActor() {}
 	{
 		struct LocalGovActor_eventlocalGovSendTagUpdate_Parms
 		{
-			TSubclassOf<AHUDController>  PlayerController;
+			AHeadsUpDisplay* PlayerController;
 		};
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			static const UE4CodeGen_Private::FClassPropertyParams NewProp_PlayerController = { UE4CodeGen_Private::EPropertyClass::Class, "PlayerController", RF_Public|RF_Transient|RF_MarkAsNative, 0x0014000000000080, 1, nullptr, STRUCT_OFFSET(LocalGovActor_eventlocalGovSendTagUpdate_Parms, PlayerController), Z_Construct_UClass_AHUDController_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerController = { UE4CodeGen_Private::EPropertyClass::Object, "PlayerController", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(LocalGovActor_eventlocalGovSendTagUpdate_Parms, PlayerController), Z_Construct_UClass_AHeadsUpDisplay_NoRegister, METADATA_PARAMS(nullptr, 0) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PlayerController,
 			};
@@ -87,12 +86,12 @@ void EmptyLinkFunctionForGeneratedCodeLocalGovActor() {}
 	{
 		struct LocalGovActor_eventprintCurrentActions_Parms
 		{
-			TSubclassOf<AHUDController>  PlayerController;
+			AHeadsUpDisplay* PlayerController;
 		};
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			static const UE4CodeGen_Private::FClassPropertyParams NewProp_PlayerController = { UE4CodeGen_Private::EPropertyClass::Class, "PlayerController", RF_Public|RF_Transient|RF_MarkAsNative, 0x0014000000000080, 1, nullptr, STRUCT_OFFSET(LocalGovActor_eventprintCurrentActions_Parms, PlayerController), Z_Construct_UClass_AHUDController_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerController = { UE4CodeGen_Private::EPropertyClass::Object, "PlayerController", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(LocalGovActor_eventprintCurrentActions_Parms, PlayerController), Z_Construct_UClass_AHeadsUpDisplay_NoRegister, METADATA_PARAMS(nullptr, 0) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PlayerController,
 			};
@@ -111,12 +110,12 @@ void EmptyLinkFunctionForGeneratedCodeLocalGovActor() {}
 	{
 		struct LocalGovActor_eventupdateLocalGovPriorities_Parms
 		{
-			TSubclassOf<AHUDController>  PlayerController;
+			AHeadsUpDisplay* PlayerController;
 		};
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			static const UE4CodeGen_Private::FClassPropertyParams NewProp_PlayerController = { UE4CodeGen_Private::EPropertyClass::Class, "PlayerController", RF_Public|RF_Transient|RF_MarkAsNative, 0x0014000000000080, 1, nullptr, STRUCT_OFFSET(LocalGovActor_eventupdateLocalGovPriorities_Parms, PlayerController), Z_Construct_UClass_AHUDController_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerController = { UE4CodeGen_Private::EPropertyClass::Object, "PlayerController", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(LocalGovActor_eventupdateLocalGovPriorities_Parms, PlayerController), Z_Construct_UClass_AHeadsUpDisplay_NoRegister, METADATA_PARAMS(nullptr, 0) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PlayerController,
 			};
@@ -145,10 +144,10 @@ void EmptyLinkFunctionForGeneratedCodeLocalGovActor() {}
 				(UObject* (*)())Z_Construct_UPackage__Script_FinalHUDTest,
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
-				{ &Z_Construct_UFunction_ALocalGovActor_localGovSendBlockingInfo, "localGovSendBlockingInfo" }, // 995647628
-				{ &Z_Construct_UFunction_ALocalGovActor_localGovSendTagUpdate, "localGovSendTagUpdate" }, // 2745864951
-				{ &Z_Construct_UFunction_ALocalGovActor_printCurrentActions, "printCurrentActions" }, // 1735085742
-				{ &Z_Construct_UFunction_ALocalGovActor_updateLocalGovPriorities, "updateLocalGovPriorities" }, // 2640048663
+				{ &Z_Construct_UFunction_ALocalGovActor_localGovSendBlockingInfo, "localGovSendBlockingInfo" }, // 3060830071
+				{ &Z_Construct_UFunction_ALocalGovActor_localGovSendTagUpdate, "localGovSendTagUpdate" }, // 2841089403
+				{ &Z_Construct_UFunction_ALocalGovActor_printCurrentActions, "printCurrentActions" }, // 2102131444
+				{ &Z_Construct_UFunction_ALocalGovActor_updateLocalGovPriorities, "updateLocalGovPriorities" }, // 2260524907
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
@@ -342,7 +341,7 @@ void EmptyLinkFunctionForGeneratedCodeLocalGovActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALocalGovActor, 3900372581);
+	IMPLEMENT_CLASS(ALocalGovActor, 2536177824);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ALocalGovActor(Z_Construct_UClass_ALocalGovActor, &ALocalGovActor::StaticClass, TEXT("/Script/FinalHUDTest"), TEXT("ALocalGovActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ALocalGovActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

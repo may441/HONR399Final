@@ -86,16 +86,16 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
-	void updateLocalGovPriorities(TSubclassOf<class AHUDController> PlayerController);
+	void updateLocalGovPriorities(AHeadsUpDisplay* PlayerController);
 	
 	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
-	void localGovSendBlockingInfo(TSubclassOf<class AHUDController> PlayerController);
+	void localGovSendBlockingInfo(AHeadsUpDisplay* PlayerController);
 	
 	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
-	void localGovSendTagUpdate(TSubclassOf<class AHUDController> PlayerController);
+	void localGovSendTagUpdate(AHeadsUpDisplay* PlayerController);
 
 	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
-	void printCurrentActions(TSubclassOf<class AHUDController> PlayerController);
+	void printCurrentActions(AHeadsUpDisplay* PlayerController);
 
 	TownAction peopleActions;
 	TownAction energyActions;

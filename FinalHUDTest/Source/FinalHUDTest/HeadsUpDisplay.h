@@ -4,7 +4,109 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "LocalGovActor.h"
 #include "HeadsUpDisplay.generated.h"
+
+typedef struct PlayerAction {
+	int actionID;
+
+	int workforceAffected = 0;
+	int energyAffected = 0;
+	int moneyAffected = 0;
+	int materialAffected = 0;
+
+	char moraleAffected = ' ';
+	char roadsAffected = ' ';
+	char populationAffected = ' ';
+	char economicsAffected = ' ';
+	char healthAffected = ' ';
+
+	//Initializer function
+	PlayerAction(int actionID, int workforceAffected, int energyAffected,
+		int moneyAffected, int materialAffected, char moraleAffected,
+		char roadsAffected, char populationAffected, char economicsAffected,
+		char healthAffected) : actionID(actionID), workforceAffected(workforceAffected),
+		moneyAffected(moneyAffected), materialAffected(materialAffected),
+		moraleAffected(moraleAffected), roadsAffected(roadsAffected),
+		populationAffected(populationAffected), economicsAffected(economicsAffected),
+		healthAffected(healthAffected)
+	{}
+
+	PlayerAction()
+	{}
+
+};
+
+								          //ID    WF   EN  MON   MAT   MOR  ROAD  POP ECON  H/S
+const PlayerAction helicopterBasedRescue  (101,   -5,   0,   0,   -5,   '1', ' ', '1', ' ', '1');
+const PlayerAction groundBasedRescue      (102,   -5,   0,   0,   -5,   ' ', '^', '1', ' ', '1');
+const PlayerAction waterBasedRescue       (103,   -5,   0,   0,   -5,   ' ', ' ', '1', ' ', '1');
+const PlayerAction homelessShelters       (104,    0,  -5,  -5,    0,   '1', ' ', ' ', ' ', '1');
+const PlayerAction familyRelocation       (105,   -5,   0,   0,    0,   '1', ' ', ' ', ' ', '1');
+const PlayerAction idServices             (106,   -5,   0,   0,    0,   '1', ' ', '^', ' ', '1');
+const PlayerAction triageServices         (107,    0,  -5,  -5,   -5,   ' ', ' ', ' ', ' ', '1');
+const PlayerAction extendedCareServices   (108,    0,  -5,  -5,    0,   '1', ' ', '_', ' ', '1');
+const PlayerAction enforcement            (109,    0,   0,  -5,    0,   '1', ' ', '_', ' ', ' ');
+const PlayerAction repairPowerPlant       (201,   -5,   5,   0,   -5,   ' ', ' ', '1', '1', ' ');
+const PlayerAction repairPowerLines       (202,   -5,   5,   0,    0,   ' ', '^', '1', '1', ' ');
+const PlayerAction repairPriorityOrder    (203,    0,   0,   0,    0,   ' ', ' ', ' ', ' ', ' ');
+const PlayerAction aidViaTrucks           (301,   -5,   0,   0,    0,   ' ', '^', ' ', ' ', '1');
+const PlayerAction sundryDistribution     (302,   -5,   0,   0,    0,   ' ', '^', ' ', ' ', '1');
+const PlayerAction supermarketsEnabled    (303,    0,  -5,   0,    0,   '1', ' ', '1', '1', ' ');
+const PlayerAction groundwaterTreatment   (304,    0,   0,  -5,   -5,   ' ', ' ', ' ', '1', '1');
+const PlayerAction humanitarianAid        (305,   -5,   0,   0,    0,   '1', '^', '_', ' ', '1');
+const PlayerAction restoreAgriculture     (401,   -5,   0,   0,    0,   ' ', ' ', ' ', '1', ' ');
+const PlayerAction toxicWasteCleanup      (402,    0,   0,   0,    0,   ' ', ' ', ' ', ' ', '1');
+const PlayerAction repairHousing          (501,   -5,   0,   0,    0,   '1', ' ', '1', ' ', ' ');
+const PlayerAction insuranceClaims        (502,    0,   0,   0,    0,   ' ', '0', '1', '1', ' ');
+const PlayerAction trafficEnforcement     (503,   -5,   0,   0,    0,   ' ', '1', ' ', ' ', ' ');
+const PlayerAction loansEnabled           (504,   -5,   0,  -5,    0,   ' ', '1', ' ', '1', ' ');
+const PlayerAction purchaseMaterial       (505,    0,   0,  -5,    5,   ' ', ' ', '1', ' ', ' ');
+const PlayerAction recruitVolunteers      (506,    5,   0,   0,    0,   '^', ' ', '^', '^', '^');
+const PlayerAction internetEnabled        (507,   -5,  -5,   0,    0,   '1', ' ', '1', '1', ' ');
+
+const PlayerAction peopleActions[9] = {
+	helicopterBasedRescue,
+	groundBasedRescue,
+	waterBasedRescue,
+	homelessShelters,
+	familyRelocation,
+	idServices,
+	triageServices,
+	extendedCareServices,
+	enforcement
+};
+
+const PlayerAction energyActions[3] = {
+	repairPowerPlant,
+	repairPowerLines,
+	repairPriorityOrder
+};
+
+const PlayerAction foodWaterActions[5] = {
+	aidViaTrucks,
+	sundryDistribution,
+	supermarketsEnabled,
+	groundwaterTreatment,
+	humanitarianAid
+};
+
+const PlayerAction enviroActions[2] = {
+	restoreAgriculture,
+	toxicWasteCleanup
+};
+
+const PlayerAction infrastructureActions[7] = {
+	repairHousing,
+	insuranceClaims,
+	trafficEnforcement,
+	loansEnabled,
+	purchaseMaterial,
+	recruitVolunteers,
+	internetEnabled
+};
+
+
 
 UCLASS()
 class FINALHUDTEST_API AHeadsUpDisplay : public APawn
@@ -14,6 +116,9 @@ class FINALHUDTEST_API AHeadsUpDisplay : public APawn
 public:
 	// Sets default values for this pawn's properties
 	AHeadsUpDisplay();
+
+	//AI controller
+	ALocalGovActor localGovActions;
 
 	UFUNCTION(BlueprintPure, Category = "Game State Access")
 	float GetCurrentCashVal();
@@ -29,6 +134,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Game State Access")
 	void SetTaskActivity(int activityID, bool enable);
+
+	UFUNCTION(BlueprintPure, Category = "Game State Access")
+	bool GetTaskIDStatus(int taskID);
 	
 
 public:
