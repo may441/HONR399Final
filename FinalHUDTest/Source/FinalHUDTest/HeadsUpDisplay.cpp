@@ -61,6 +61,18 @@ void AHeadsUpDisplay::SetTaskActivity(int activityID, bool enable)
 		if (category == 1) {
 			PeopleStuff(ID, enable);
 		}
+		if (category == 2) {
+			EnergyStuff(ID, enable);
+		}
+		if (category == 3) {
+			FWStuff(ID, enable);
+		}
+		if (category == 4) {
+			EnvStuff(ID, enable);
+		}
+		if (category == 5) {
+			InfStuff(ID, enable);
+		}
 	}
 }
 
