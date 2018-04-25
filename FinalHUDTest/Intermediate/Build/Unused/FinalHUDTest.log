@@ -1,17 +1,40 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Parsing headers for FinalHUDTestEditor
-    Running UnrealHeaderTool "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\FinalHUDTest.uproject" "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\FinalHUDTestEditor\Development\FinalHUDTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for FinalHUDTestEditor in 8.9351175 seconds
-  Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-6186.dll".
-  Unable to delete old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-6186.dll". Error: Access to the path 'C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-6186.dll' is denied.
-  Deleting old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-6186.pdb".
-  Unable to delete old hot reload file: "C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-6186.pdb". Error: Access to the path 'C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-6186.pdb' is denied.
-  Performing 5 actions (9 in parallel)
+﻿  Performing full C++ include scan (building a new target)
+  Using 'git status' to determine working set for adaptive non-unity build.
+  Creating makefile for FinalHUDTestEditor (no existing makefile)
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-1039.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-1039.pdb".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-1612.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-1612.pdb".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-2287.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-2287.pdb".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-292.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-292.pdb".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-303.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-303.pdb".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-3316.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-3316.pdb".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-3931.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-3931.pdb".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-4716.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-4716.pdb".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-776.dll".
+  Deleting old hot reload file: "C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Binaries\Win64\UE4Editor-FinalHUDTest-776.pdb".
+  Performing 14 actions (4 in parallel)
+  [2/14] Resource PCLaunch.rc
+  SharedPCH.Engine.cpp
   FinalHUDTestGameModeBase.cpp
-  HeadsUpDisplay.gen.cpp
+  FinalHUDTest.cpp
+  HUDController.cpp
   HeadsUpDisplay.cpp
-  [4/5] Link UE4Editor-FinalHUDTest.dll
-  [5/5] Link UE4Editor-FinalHUDTest.lib
-     Creating library C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.lib and object C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.exp
-     Creating library C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.suppressed.lib and object C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.suppressed.exp
-  Total build time: 12.69 seconds (Local executor: 1.82 seconds)
+  LocalGovActor.cpp
+  FinalHUDTest.init.gen.cpp
+  FinalHUDTestGameModeBase.gen.cpp
+  HeadsUpDisplay.gen.cpp
+  HUDController.gen.cpp
+  LocalGovActor.gen.cpp
+  [13/14] Link UE4Editor-FinalHUDTest.dll
+  [14/14] Link UE4Editor-FinalHUDTest.lib
+     Creating library C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.suppressed.lib and object C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.suppressed.exp
+     Creating library C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.lib and object C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest.exp
+  Deploying FinalHUDTestEditor Win64 Development...
+  Total build time: 46.30 seconds (Local executor: 40.62 seconds)

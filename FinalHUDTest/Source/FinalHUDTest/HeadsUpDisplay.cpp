@@ -15,18 +15,32 @@ AHeadsUpDisplay::AHeadsUpDisplay()
 		CurrentPowerVal = 100.0f;
 		CurrentMaterialVal = 100.0f;
 
+		CurrentMoraleVal = 0.0f;
+		CurrentRoadVal = 0.0f;
+		CurrentEconomyVal = 0.0f;
+		CurrentHealthSafetyVal = 0.0f;
+		CurrentPopulationVal = 0.0f;
+
 		// Arrays to track what actions have been taken
-		PeopleCheck.Init(0, 9);
-		EnergyCheck.Init(0, 3);
-		FWCheck.Init(0, 5);
-		EnvCheck.Init(0, 2);
-		InfCheck.Init(0, 8);
+		PeopleCheck.Init(false, 9);
+		EnergyCheck.Init(false, 3);
+		FWCheck.Init(false, 5);
+		EnvCheck.Init(false, 2);
+		InfCheck.Init(false, 8);
 
 		// Projected Resource Values
-		ProjCashVal = CurrentCashVal;
-		ProjWorkforceVal = CurrentWorkforceVal;
-		ProjPowerVal = CurrentPowerVal;
-		ProjMaterialVal = CurrentMaterialVal;
+		ProjCashVal = 0;
+		ProjWorkforceVal = 0;
+		ProjPowerVal = 0;
+		ProjMaterialVal = 0;
+
+		ProjMoraleVal = 0;
+		ProjRoadVal = 0;
+		ProjEconomyVal = 0;
+		ProjHealthSafetyVal = 0;
+		ProjPopulationVal = 0;
+
+		
 }
 
 float AHeadsUpDisplay::GetCurrentCashVal()
@@ -49,46 +63,217 @@ float AHeadsUpDisplay::GetCurrentMaterialVal()
 	return CurrentMaterialVal;
 }
 
+float AHeadsUpDisplay::GetProjectedCashVal()
+{
+	return ProjCashVal;
+}
+
+float AHeadsUpDisplay::GetProjectedPowerVal()
+{
+	return ProjPowerVal;
+}
+
+float AHeadsUpDisplay::GetProjectedWorkforceVal()
+{
+	return ProjWorkforceVal;
+}
+
+float AHeadsUpDisplay::GetProjectedMaterialVal()
+{
+	return ProjMaterialVal;
+}
+
+float AHeadsUpDisplay::GetMoraleVal()
+{
+	return CurrentMoraleVal;
+}
+
+float AHeadsUpDisplay::GetEconomyVal()
+{
+	return CurrentEconomyVal;
+}
+
+float AHeadsUpDisplay::GetRoadsVal()
+{
+	return CurrentRoadVal;
+}
+
+float AHeadsUpDisplay::GetPopulationVal()
+{
+	return CurrentPopulationVal;
+}
+
+float AHeadsUpDisplay::GetHealthSafetyVal()
+{
+	return CurrentHealthSafetyVal;
+}
+
+
 void AHeadsUpDisplay::SetTaskActivity(int activityID, bool enable)
 {
-	if (activityID == 1) {
-		UpdateCurrentVals();
-	}
-	else {
 		int category = activityID / 100;
 		int ID = activityID % 100 - 1;
 
+		//Add penalty if we checked, subtract if we didn't
+
 		if (category == 1) {
-			PeopleStuff(ID, enable);
+			PeopleCheck[ID] = enable;
 		}
 		if (category == 2) {
-			EnergyStuff(ID, enable);
+			EnergyCheck[ID] = enable;
 		}
 		if (category == 3) {
-			FWStuff(ID, enable);
+			FWCheck[ID] =  enable;
 		}
 		if (category == 4) {
-			EnvStuff(ID, enable);
+			EnvCheck[ID] = enable;
 		}
 		if (category == 5) {
-			InfStuff(ID, enable);
+			InfCheck[ID] = enable;
 		}
-	}
+	
+		UpdateProjectedValues();
 }
 
-void AHeadsUpDisplay::UpdateCurrentVals()
+void AHeadsUpDisplay::UpdateCurrentVals(ALocalGovActor* localGovActions)
 {
-	localGovActions.localGovSendBlockingInfo(this);
-	localGovActions.localGovSendTagUpdate(this);
+	TArray<float> blockingVals;
+	TArray<float> gainPenaltyVals;
+	TArray<float> tagUpdateVals;
+	blockingVals.Init(0, 4);
+	gainPenaltyVals.Init(0, 4);
+	tagUpdateVals.Init(0, 6);
 
-	CurrentCashVal = ProjCashVal;
-	CurrentMaterialVal = ProjMaterialVal;
-	CurrentWorkforceVal = ProjWorkforceVal;
-	CurrentPowerVal = ProjPowerVal;
+	localGovActions->localGovSendBlockingInfo(blockingVals, gainPenaltyVals);
+	localGovActions->localGovSendTagUpdate(tagUpdateVals);
+
+	WorkforceEffectivenessPenalty = blockingVals[0];
+	PowerEffectivenessPenalty = blockingVals[1];
+	CashEffectivenessPenalty = blockingVals[2];
+	MaterialEffectivenessPenalty = blockingVals[3];
+
+	WorkforceGainPenalty = gainPenaltyVals[0];
+	PowerGainPenalty = gainPenaltyVals[1];
+	CashGainPenalty = gainPenaltyVals[2];
+	MaterialGainPenalty = gainPenaltyVals[3];
+
+	//Calculate effectiveness penalty
+	float effectivenessPenalty = ProjCashVal * CashEffectivenessPenalty + ProjWorkforceVal * WorkforceEffectivenessPenalty
+		+ ProjPowerVal * PowerEffectivenessPenalty + ProjMaterialVal * MaterialEffectivenessPenalty;
+	float actionEffectiveness = 1 - effectivenessPenalty;
+
+	//Calculate gain penalties
+	if (CashGainPenalty > 0 && ProjCashVal > 0) { ProjCashVal = ProjCashVal * (1 - CashGainPenalty);}
+	if (WorkforceGainPenalty > 0 && ProjWorkforceVal > 0) { ProjWorkforceVal = ProjWorkforceVal * (1 - WorkforceGainPenalty); }
+	if (PowerGainPenalty > 0 && ProjPowerVal > 0) { ProjPowerVal = ProjPowerVal * (1 - PowerGainPenalty); }
+	if (MaterialGainPenalty > 0 && ProjMaterialVal > 0) { ProjMaterialVal = ProjMaterialVal * (1 - MaterialGainPenalty); }
+
+	//Apply changes
+	CurrentCashVal = CurrentCashVal + ProjCashVal;
+	CurrentMaterialVal = CurrentMaterialVal + ProjMaterialVal;
+	CurrentWorkforceVal = CurrentWorkforceVal + ProjWorkforceVal;
+	CurrentPowerVal = CurrentPowerVal + ProjPowerVal;
+
+	CurrentMoraleVal = CurrentMoraleVal + ProjMoraleVal * actionEffectiveness + tagUpdateVals[0];
+	CurrentRoadVal = CurrentRoadVal + ProjRoadVal * actionEffectiveness + tagUpdateVals[1];
+	CurrentPopulationVal = CurrentPopulationVal + ProjPopulationVal * actionEffectiveness + tagUpdateVals[2];
+	CurrentEconomyVal = CurrentEconomyVal + ProjEconomyVal * actionEffectiveness + tagUpdateVals[3];
+	CurrentHealthSafetyVal = CurrentHealthSafetyVal + ProjHealthSafetyVal * actionEffectiveness + tagUpdateVals[4];
+
+	//Reset Counter Variables
+	ProjCashVal = 0;
+	ProjMaterialVal = 0;
+	ProjWorkforceVal = 0;
+	ProjPowerVal = 0;
+
+	ProjMoraleVal = 0;
+	ProjRoadVal = 0;
+	ProjPopulationVal = 0;
+	ProjEconomyVal = 0;
+	ProjHealthSafetyVal = 0;
 
 	//Prepare Local Government actions for next action
-	localGovActions.updateLocalGovPriorities(this);
+	localGovActions->updateLocalGovPriorities(this);
 
+	UpdateProjectedValues();
+}
+
+void AHeadsUpDisplay::UpdateProjectedValues()
+{
+	//Reset all values for counting
+	ProjCashVal = 0;
+	ProjMaterialVal = 0;
+	ProjWorkforceVal = 0;
+	ProjPowerVal = 0;
+
+	ProjMoraleVal = 0;
+	ProjRoadVal = 0;
+	ProjPopulationVal = 0;
+	ProjEconomyVal = 0;
+	ProjHealthSafetyVal = 0;
+
+	PlayerAction actionRef;
+	for (int i = 0; i < PeopleCheck.Num(); i++)
+	{
+		if (PeopleCheck[i])
+			AddProjectedValues(peopleActions[i]);
+	}
+
+	for (int i = 0; i < EnergyCheck.Num(); i++)
+	{
+		if (EnergyCheck[i])
+			AddProjectedValues(energyActions[i]);
+	}
+
+	for (int i = 0; i < FWCheck.Num(); i++)
+	{
+		if (FWCheck[i])
+			AddProjectedValues(foodWaterActions[i]);
+	}
+
+	for (int i = 0; i < EnvCheck.Num(); i++)
+	{
+		if (EnvCheck[i])
+			AddProjectedValues(enviroActions[i]);
+	}
+
+	for (int i = 0; i < InfCheck.Num(); i++)
+	{
+		if (InfCheck[i])
+			AddProjectedValues(infrastructureActions[i]);
+	}
+
+}
+
+void AHeadsUpDisplay::AddProjectedValues(PlayerAction actionRef)
+{
+	float modifier = 1;
+	float scalingVal = 1000;
+
+	if (actionRef.moraleAffected == INFINITY) { modifier = modifier * (1 + CurrentMoraleVal / scalingVal); }
+	else if (actionRef.moraleAffected == -INFINITY) { modifier = modifier * (1 - CurrentMoraleVal / scalingVal); }
+	else { ProjMoraleVal = ProjMoraleVal + actionRef.moraleAffected; }
+
+	if (actionRef.roadsAffected == INFINITY) { modifier = modifier * (1 + CurrentRoadVal / scalingVal); }
+	else if (actionRef.roadsAffected == -INFINITY) { modifier = modifier * (1 - CurrentRoadVal / scalingVal); }
+	else { ProjRoadVal = ProjRoadVal + actionRef.roadsAffected; }
+
+	if (actionRef.populationAffected == INFINITY) { modifier = modifier * (1 + CurrentPopulationVal / scalingVal); }
+	else if (actionRef.populationAffected == -INFINITY) { modifier = modifier * (1 - CurrentPopulationVal / scalingVal); }
+	else { ProjPopulationVal = ProjPopulationVal + actionRef.populationAffected; }
+
+	if (actionRef.economicsAffected == INFINITY) { modifier = modifier * (1 + CurrentEconomyVal / scalingVal); }
+	else if (actionRef.economicsAffected == -INFINITY) { modifier = modifier * (1 - CurrentEconomyVal / scalingVal); }
+	else { ProjEconomyVal = ProjEconomyVal + actionRef.economicsAffected; }
+
+	if (actionRef.healthAffected == INFINITY) { modifier = modifier * (1 + CurrentHealthSafetyVal / scalingVal); }
+	else if (actionRef.healthAffected == -INFINITY) { modifier = modifier * (1 - CurrentHealthSafetyVal / scalingVal); }
+	else { ProjHealthSafetyVal = ProjHealthSafetyVal + actionRef.healthAffected; }
+
+	ProjWorkforceVal = ProjWorkforceVal + actionRef.workforceAffected * modifier;
+	ProjPowerVal = ProjPowerVal + actionRef.energyAffected * modifier;
+	ProjCashVal = ProjCashVal + actionRef.moneyAffected * modifier;
+	ProjMaterialVal = ProjMaterialVal + actionRef.materialAffected * modifier;
 }
 
 bool AHeadsUpDisplay::GetTaskIDStatus(int taskID)
@@ -128,129 +313,6 @@ bool AHeadsUpDisplay::GetTaskIDStatus(int taskID)
 
 	return false;
 
-}
-
-void AHeadsUpDisplay::PeopleStuff(int ID, bool enable)
-{
-	int* pointer = PeopleCheck.GetData();
-	pointer[ID] = enable;
-	
-	if (ID == 0) { // Helicopter Rescue
-		ProjWorkforceVal = ProjWorkforceVal - 15;
-		ProjMaterialVal = ProjMaterialVal - 10;
-	}
-	if (ID == 1) { // Ground Rescue
-		ProjWorkforceVal = ProjWorkforceVal - 5;
-	}
-	if (ID == 2) { // Water Rescue
-		ProjWorkforceVal = ProjWorkforceVal - 10;
-		ProjMaterialVal = ProjMaterialVal - 5;
-	}
-	if (ID == 3) { // Homeless Shelters
-		ProjPowerVal = ProjPowerVal - 10;
-		ProjCashVal = ProjCashVal - 10;
-	}
-	if (ID == 4) { // Family Relocation
-		ProjWorkforceVal = ProjWorkforceVal - 5;
-	}
-	if (ID == 5) { // Identification Services
-		ProjWorkforceVal = ProjWorkforceVal - 5;
-	}
-	if (ID == 6) { // Triage
-		ProjPowerVal = ProjPowerVal - 5;
-		ProjCashVal = ProjCashVal - 5;
-		ProjMaterialVal = ProjMaterialVal - 3;
-	}
-	if (ID == 7) { // Extended Care
-		ProjPowerVal = ProjPowerVal - 15;
-		ProjCashVal = ProjCashVal - 7;
-	}
-	if (ID == 8) { // Enforcement
-		ProjCashVal = ProjCashVal - 5;
-	}
-}
-
-void AHeadsUpDisplay::EnergyStuff(int ID, bool enable)
-{
-	int* pointer = EnergyCheck.GetData();
-	pointer[ID] = enable;
-
-	if (pointer[0] * pointer[1] == 1) { // Both power stuff was completed
-		ProjPowerVal = ProjPowerVal + 50;
-	}
-	if (ID == 1) { // Power Lines
-		ProjWorkforceVal = ProjWorkforceVal - 5;
-	}
-	if (ID == 0) { // Power Plants
-		ProjWorkforceVal = ProjWorkforceVal - 10;
-	}
-}
-
-void AHeadsUpDisplay::FWStuff(int ID, bool enable)
-{
-	int* pointer = FWCheck.GetData();
-	pointer[ID] = enable;
-
-	if (ID == 0) { // Aid via Trucks
-		ProjWorkforceVal = ProjWorkforceVal - 5;
-	}
-	if (ID == 1) { // Sundry Distribution
-		ProjWorkforceVal = ProjWorkforceVal - 5;
-	}
-	if (ID == 2) { // Supermarkets
-		ProjPowerVal = ProjPowerVal - 10;
-	}
-	if (ID == 3) { // Groundwater Treatment
-		ProjCashVal = ProjCashVal - 7;
-		ProjMaterialVal = ProjMaterialVal - 5;
-	}
-	if (ID == 4) { // Humanitarian Aid
-		ProjWorkforceVal = ProjWorkforceVal - 2;
-	}
-}
-
-void AHeadsUpDisplay::EnvStuff(int ID, bool enable) {
-	int* pointer = EnvCheck.GetData();
-	pointer[ID] = enable;
-
-	if (ID == 0) { // Restore Agriculture
-		ProjWorkforceVal = ProjWorkforceVal - 7;
-	}
-
-	// Toxic Waste affects Tags, not resources
-}
-
-void AHeadsUpDisplay::InfStuff(int ID, bool enable)
-{
-	int* pointer = InfCheck.GetData();
-	pointer[ID] = enable;
-
-	if (ID == 0) { // Repair Housing
-		ProjWorkforceVal = ProjWorkforceVal - 7;
-	}
-
-	// Insurance Claims <-- Needs to be added for Tags, not resources
-
-	if (ID == 2) { // Repair Roads
-		ProjWorkforceVal = ProjWorkforceVal - 10;
-	}
-	if (ID == 3) { // Traffic Enforcement
-		ProjWorkforceVal = ProjWorkforceVal - 3;
-	}
-	if (ID == 4) { // Loans
-		ProjCashVal = ProjCashVal - 13;
-	}
-	if (ID == 5) { // Purchase Material
-		ProjCashVal = ProjCashVal - 6;
-		ProjMaterialVal = ProjMaterialVal + 12;
-	}
-	if (ID == 6) { // Recruit Volunteers
-		ProjWorkforceVal = ProjWorkforceVal + 10;
-	}
-	if (ID == 7) { // Internet
-		ProjWorkforceVal = ProjWorkforceVal - 3;
-		ProjPowerVal = ProjPowerVal - 5;
-	}
 }
 
 // Called when the game starts or when spawned

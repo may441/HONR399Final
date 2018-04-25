@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\FinalHUDTest.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{AEA9E977-AA70-4A76-914D-10F378B5E41C}</UniqueIdentifier>
+			<UniqueIdentifier>{A2B569D2-AE92-43E1-8106-0CDDBFC2B190}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FinalHUDTest.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{508F2B91-F217-4230-B28F-15721CA23640}</UniqueIdentifier>
+			<UniqueIdentifier>{1E2F7E5F-878F-48BE-A16E-04DE65551ED6}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,7 +25,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\FinalHUDTest">
-			<UniqueIdentifier>{B8B44EEC-622F-441B-89D5-407755EB9368}</UniqueIdentifier>
+			<UniqueIdentifier>{2F6E3D32-386E-43AF-9632-1A500046D923}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FinalHUDTest\FinalHUDTest.Build.cs">
 			<Filter>Source\FinalHUDTest</Filter>

@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "LocalGovActor.h"
-#include <random>
+
 
 
 // Sets default values
@@ -27,7 +27,6 @@ void ALocalGovActor::BeginPlay()
 	int foodWaterTurnsRemaining = 0;
 	int environmentTurnsRemaining = 0;
 	int infrastructureTurnsRemaining = 0;
-
 
 	disasterAssessed         =false;
 	soeDeclared              =false;
@@ -270,12 +269,86 @@ void ALocalGovActor::updateLocalGovPriorities(AHeadsUpDisplay* PlayerController)
 	}
 }
 
-void ALocalGovActor::localGovSendBlockingInfo(AHeadsUpDisplay* PlayerController)
+void ALocalGovActor::localGovSendActionInfo(int* matchVal, char type)
 {
+	if (peopleActions.workforceAffected == type || energyActions.workforceAffected == type ||
+		foodWaterActions.workforceAffected == type || environmentActions.workforceAffected == type
+		|| infrastructureActions.workforceAffected == type)
+	{
+		matchVal[0] = 1;
+	}
+	else
+	{
+		matchVal[0] = 0;
+	}
+
+	if (peopleActions.energyAffected == type || energyActions.energyAffected == type ||
+		foodWaterActions.energyAffected == type || environmentActions.energyAffected == type
+		|| infrastructureActions.energyAffected == type)
+	{
+		matchVal[1] = 1;
+	}
+	else
+	{
+		matchVal[1] = 0;
+	}
+
+	if (peopleActions.moneyAffected == type || energyActions.moneyAffected == type ||
+		foodWaterActions.moneyAffected == type || environmentActions.moneyAffected == type
+		|| infrastructureActions.moneyAffected == type)
+	{
+		matchVal[2] = 1;
+	}
+	else
+	{
+		matchVal[2] = 0;
+	}
+
+	if (peopleActions.materialAffected == type || energyActions.materialAffected == type ||
+		foodWaterActions.materialAffected == type || environmentActions.materialAffected == type
+		|| infrastructureActions.materialAffected == type)
+	{
+		matchVal[3] = 0.025;
+	}
+	else
+	{
+		matchVal[3] = 0;
+	}
 }
 
-void ALocalGovActor::localGovSendTagUpdate(AHeadsUpDisplay* PlayerController)
+void ALocalGovActor::localGovSendBlockingInfo(TArray<float> blockingVals, TArray<float> gainPenaltyVals)
 {
+	int lowBlocking[4];
+	int highBlocking[4];
+	localGovSendActionInfo(lowBlocking, 'x');
+	localGovSendActionInfo(highBlocking, 'X');
+	blockingVals[0] = lowBlocking[0] * 0.025 + highBlocking[0] * 0.05;
+	blockingVals[1] = lowBlocking[1] * 0.025 + highBlocking[1] * 0.05;
+	blockingVals[2] = lowBlocking[2] * 0.025 + highBlocking[2] * 0.05;
+	blockingVals[3] = lowBlocking[3] * 0.025 + highBlocking[3] * 0.05;
+
+	int lowPenalty[4];
+	int highPenalty[4];
+	localGovSendActionInfo(lowPenalty, 'o');
+	localGovSendActionInfo(highPenalty, 'O');
+	gainPenaltyVals[0] = lowPenalty[0] * 0.1 + highPenalty[0] * 0.25;
+	gainPenaltyVals[1] = lowPenalty[1] * 0.1 + highPenalty[1] * 0.25;
+	gainPenaltyVals[2] = lowPenalty[2] * 0.1 + highPenalty[2] * 0.25;
+	gainPenaltyVals[3] = lowPenalty[3] * 0.1 + highPenalty[3] * 0.25;
+}
+
+void ALocalGovActor::localGovSendTagUpdate(TArray<float> BoostVals)
+{
+	BoostVals[0] = peopleActions.moraleAffected + energyActions.moraleAffected +
+		foodWaterActions.moraleAffected + environmentActions.moraleAffected + infrastructureActions.moraleAffected;
+	BoostVals[1] = peopleActions.roadsAffected + energyActions.roadsAffected +
+		foodWaterActions.roadsAffected + environmentActions.roadsAffected + infrastructureActions.roadsAffected;
+	BoostVals[2] = peopleActions.populationAffected + energyActions.populationAffected +
+		foodWaterActions.populationAffected + environmentActions.populationAffected + infrastructureActions.populationAffected;
+	BoostVals[3] = peopleActions.economicsAffected + energyActions.economicsAffected +
+		foodWaterActions.economicsAffected + environmentActions.economicsAffected + infrastructureActions.economicsAffected;
+	BoostVals[4] = peopleActions.healthAffected + energyActions.healthAffected +
+		foodWaterActions.healthAffected + environmentActions.healthAffected + infrastructureActions.healthAffected;
 
 }
 

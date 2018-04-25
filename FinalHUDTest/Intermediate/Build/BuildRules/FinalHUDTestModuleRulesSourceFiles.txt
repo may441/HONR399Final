@@ -1,3 +1,3 @@
-C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Source\FinalHUDTest\FinalHUDTest.Build.cs
-C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Source\FinalHUDTest.Target.cs
-C:\Users\Dorothy\Desktop\Patrick_May_Sriram_Baireddi_Honr399_Final\HONR399Final\FinalHUDTest\Source\FinalHUDTestEditor.Target.cs
+C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Source\FinalHUDTest\FinalHUDTest.Build.cs
+C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Source\FinalHUDTest.Target.cs
+C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Source\FinalHUDTestEditor.Target.cs
