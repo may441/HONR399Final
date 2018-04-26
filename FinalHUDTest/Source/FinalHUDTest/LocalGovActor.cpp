@@ -308,7 +308,7 @@ void ALocalGovActor::localGovSendActionInfo(int* matchVal, char type)
 		foodWaterActions.materialAffected == type || environmentActions.materialAffected == type
 		|| infrastructureActions.materialAffected == type)
 	{
-		matchVal[3] = 0.025;
+		matchVal[3] = 1;
 	}
 	else
 	{
@@ -316,16 +316,27 @@ void ALocalGovActor::localGovSendActionInfo(int* matchVal, char type)
 	}
 }
 
-void ALocalGovActor::localGovSendBlockingInfo(TArray<float> blockingVals, TArray<float> gainPenaltyVals)
+TArray<float> ALocalGovActor::localGovSendBlockingInfo()
 {
+	TArray<float> blockingVals;
+	blockingVals.Init(0, 4);
+
 	int lowBlocking[4];
 	int highBlocking[4];
 	localGovSendActionInfo(lowBlocking, 'x');
 	localGovSendActionInfo(highBlocking, 'X');
-	blockingVals[0] = lowBlocking[0] * 0.025 + highBlocking[0] * 0.05;
+	blockingVals[0] = float(lowBlocking[0] * 0.025 + highBlocking[0] * 0.05);
 	blockingVals[1] = lowBlocking[1] * 0.025 + highBlocking[1] * 0.05;
 	blockingVals[2] = lowBlocking[2] * 0.025 + highBlocking[2] * 0.05;
 	blockingVals[3] = lowBlocking[3] * 0.025 + highBlocking[3] * 0.05;
+
+	return blockingVals;
+}
+
+TArray<float> ALocalGovActor::localGovSendPenaltyInfo()
+{
+	TArray<float> gainPenaltyVals;
+	gainPenaltyVals.Init(0, 4);
 
 	int lowPenalty[4];
 	int highPenalty[4];
@@ -335,10 +346,15 @@ void ALocalGovActor::localGovSendBlockingInfo(TArray<float> blockingVals, TArray
 	gainPenaltyVals[1] = lowPenalty[1] * 0.1 + highPenalty[1] * 0.25;
 	gainPenaltyVals[2] = lowPenalty[2] * 0.1 + highPenalty[2] * 0.25;
 	gainPenaltyVals[3] = lowPenalty[3] * 0.1 + highPenalty[3] * 0.25;
+
+	return gainPenaltyVals;
 }
 
-void ALocalGovActor::localGovSendTagUpdate(TArray<float> BoostVals)
+TArray<float> ALocalGovActor::localGovSendTagUpdate()
 {
+	TArray<float> BoostVals;
+	BoostVals.Init(0, 5);
+
 	BoostVals[0] = peopleActions.moraleAffected + energyActions.moraleAffected +
 		foodWaterActions.moraleAffected + environmentActions.moraleAffected + infrastructureActions.moraleAffected;
 	BoostVals[1] = peopleActions.roadsAffected + energyActions.roadsAffected +
@@ -350,11 +366,171 @@ void ALocalGovActor::localGovSendTagUpdate(TArray<float> BoostVals)
 	BoostVals[4] = peopleActions.healthAffected + energyActions.healthAffected +
 		foodWaterActions.healthAffected + environmentActions.healthAffected + infrastructureActions.healthAffected;
 
+	return BoostVals;
+}
+
+FString ALocalGovActor::localGovReturnActionName(int category)
+{
+	TownAction activeAction;
+	switch (category) {
+		case 1:
+			activeAction = peopleActions;
+			break;
+		case 2:
+			activeAction = energyActions;
+			break;
+		case 3:
+			activeAction = foodWaterActions;
+			break;
+		case 4:
+			activeAction = environmentActions;
+			break;
+		case 5:
+			activeAction = infrastructureActions;
+			break;
+	}
+
+	FString returnVal;
+
+	switch (activeAction.actionID) {
+	case 601: returnVal = TEXT("Assess Disaster Extent"); break;
+	case 602: returnVal = TEXT("Assign Firefighters to Ground Based Rescue"); break;
+	case 603: returnVal = TEXT("Declare State of Emergency"); break;
+	case 604: returnVal = TEXT("Mobilizing Local Emergency Response Services"); break;
+	case 605: returnVal = TEXT("Repairing Hospital"); break;
+	case 606: returnVal = TEXT("Town Hall Meeting"); break;
+	case 701: returnVal = TEXT("Setting Up Emergency Generators"); break;
+	case 702: returnVal = TEXT("Requesting State Assistance"); break;
+	case 703: returnVal = TEXT("Hiring Contractors"); break;
+	case 704: returnVal = TEXT("Contractors Repairing"); break;
+	case 705: returnVal = TEXT("Coordinating with Power Companies"); break;
+	case 801: returnVal = TEXT("NGOs providing assistance"); break;
+	case 802: returnVal = TEXT("Coordinating with NGOs"); break;
+	case 803: returnVal = TEXT("NGOs providing housing assistance"); break;
+	case 804: returnVal = TEXT("Fixing Groundwater Plant"); break;
+	case 901: returnVal = TEXT("Restoring Farmland"); break;
+	case 902: returnVal = TEXT("Filing Insurance Claims"); break;
+	case 903: returnVal = TEXT("Cleaning Local Parks"); break;
+	case 904: returnVal = TEXT("No action at this time"); break;
+	case 1001: returnVal = TEXT("Incentivizing Business Return"); break;
+	case 1002: returnVal = TEXT("Repairing Local Roads"); break;
+	case 1003: returnVal = TEXT("Repairing Rural Roads"); break;
+	case 1004: returnVal = TEXT("Repairing Local Businesses"); break;
+	case 1005: returnVal = TEXT("Hiring Contractors"); break;
+	case 1006: returnVal = TEXT("Requesting Mutual Aid"); break;
+	case 1007: returnVal = TEXT("Reviewing Contractor Requests"); break;
+	case 1008: returnVal = TEXT("Inactive"); break;
+	}
+		return returnVal;
+}
+
+FString ALocalGovActor::localGovReturnBlocking(int category)
+{
+	TownAction activeAction;
+	switch (category) {
+	case 1:
+		activeAction = peopleActions;
+		break;
+	case 2:
+		activeAction = energyActions;
+		break;
+	case 3:
+		activeAction = foodWaterActions;
+		break;
+	case 4:
+		activeAction = environmentActions;
+		break;
+	case 5:
+		activeAction = infrastructureActions;
+		break;
+	}
+	FString returnVal = TEXT("");
+
+	if (activeAction.workforceAffected == 'x' || activeAction.workforceAffected == 'X')
+	{
+		returnVal += TEXT("Workforce\n");
+	}
+	else if (activeAction.moneyAffected == 'x' || activeAction.moneyAffected == 'X')
+	{
+		returnVal += TEXT("Money\n");
+	}
+	else if (activeAction.energyAffected == 'x' || activeAction.energyAffected == 'X')
+	{
+		returnVal += TEXT("Energy\n");
+	}
+	else if (activeAction.materialAffected == 'x' || activeAction.materialAffected == 'X')
+	{
+		returnVal += TEXT("Material\n");
+	}
+	else
+	{
+		returnVal = TEXT("None");
+	}
+
+	return FString();
+}
+
+FString ALocalGovActor::localGovReturnGainPenalty(int category)
+{
+	TownAction activeAction;
+	switch (category) {
+	case 1:
+		activeAction = peopleActions;
+		break;
+	case 2:
+		activeAction = energyActions;
+		break;
+	case 3:
+		activeAction = foodWaterActions;
+		break;
+	case 4:
+		activeAction = environmentActions;
+		break;
+	case 5:
+		activeAction = infrastructureActions;
+		break;
+	}
+	FString returnVal = TEXT("");
+
+	if (activeAction.workforceAffected == 'o' || activeAction.workforceAffected == 'O')
+	{
+		returnVal += TEXT("Workforce\n");
+	}
+	else if (activeAction.moneyAffected == 'o' || activeAction.moneyAffected == 'O')
+	{
+		returnVal += TEXT("Money\n");
+	}
+	else if (activeAction.energyAffected == 'o' || activeAction.energyAffected == 'O')
+	{
+		returnVal += TEXT("Energy\n");
+	}
+	else if (activeAction.materialAffected == 'o' || activeAction.materialAffected == 'O')
+	{
+		returnVal += TEXT("Material\n");
+	}
+	else
+	{
+		returnVal = TEXT("None");
+	}
+
+	return FString();
 }
 
 void ALocalGovActor::printCurrentActions(AHeadsUpDisplay* PlayerController)
 {
 	if (GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("People: %d Energy: %d Food/Water: %d EnviroAction: %d Infrastructure: %d"), peopleActions.actionID, energyActions.actionID, foodWaterActions.actionID, environmentActions.actionID, infrastructureActions.actionID));
+}
+
+bool ALocalGovActor::actionIsActive(int actionID)
+{
+	bool returnVal = false;
+	returnVal = actionID == peopleActions.actionID ? true : returnVal;
+	returnVal = actionID == energyActions.actionID ? true : returnVal;
+	returnVal = actionID == foodWaterActions.actionID ? true : returnVal;
+	returnVal = actionID == environmentActions.actionID ? true : returnVal;
+	returnVal = actionID == infrastructureActions.actionID ? true : returnVal;
+
+	return returnVal;
 }
 

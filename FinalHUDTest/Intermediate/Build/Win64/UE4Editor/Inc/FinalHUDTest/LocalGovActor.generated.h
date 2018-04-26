@@ -16,6 +16,15 @@ class AHeadsUpDisplay;
 
 #define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_75_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execactionIsActive) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_actionID); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->actionIsActive(Z_Param_actionID); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execprintCurrentActions) \
 	{ \
 		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
@@ -25,12 +34,38 @@ class AHeadsUpDisplay;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
+	DECLARE_FUNCTION(execlocalGovReturnGainPenalty) \
 	{ \
-		P_GET_TARRAY(float,Z_Param_BoostVals); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_category); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->localGovSendTagUpdate(Z_Param_BoostVals); \
+		*(FString*)Z_Param__Result=this->localGovReturnGainPenalty(Z_Param_category); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execlocalGovReturnBlocking) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_category); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=this->localGovReturnBlocking(Z_Param_category); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execlocalGovReturnActionName) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_category); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=this->localGovReturnActionName(Z_Param_category); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<float>*)Z_Param__Result=this->localGovSendTagUpdate(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -46,6 +81,15 @@ class AHeadsUpDisplay;
 
 #define FinalHUDTest_Source_FinalHUDTest_LocalGovActor_h_75_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execactionIsActive) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_actionID); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->actionIsActive(Z_Param_actionID); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execprintCurrentActions) \
 	{ \
 		P_GET_OBJECT(AHeadsUpDisplay,Z_Param_PlayerController); \
@@ -55,12 +99,38 @@ class AHeadsUpDisplay;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
+	DECLARE_FUNCTION(execlocalGovReturnGainPenalty) \
 	{ \
-		P_GET_TARRAY(float,Z_Param_BoostVals); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_category); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->localGovSendTagUpdate(Z_Param_BoostVals); \
+		*(FString*)Z_Param__Result=this->localGovReturnGainPenalty(Z_Param_category); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execlocalGovReturnBlocking) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_category); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=this->localGovReturnBlocking(Z_Param_category); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execlocalGovReturnActionName) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_category); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=this->localGovReturnActionName(Z_Param_category); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execlocalGovSendTagUpdate) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<float>*)Z_Param__Result=this->localGovSendTagUpdate(); \
 		P_NATIVE_END; \
 	} \
  \

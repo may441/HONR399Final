@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "LocalGovActor.h"
 #include "HUDController.generated.h"
 
 /**
@@ -24,6 +25,13 @@ public:
 	// Variable to hold the widget After Creating it.
 	UUserWidget* gameWidget;
 
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
+//		TSubclassOf<class ALocalGovActor> myGovActor;
+
+//	ALocalGovActor *govActor;
+
+//	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
+//	ALocalGovActor* returnLocalActor();
 	// Override BeginPlay()
 	virtual void BeginPlay() override;
 };

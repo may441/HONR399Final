@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FINALHUDTEST_HUDController_generated_h
 
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_RPC_WRAPPERS
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_INCLASS_NO_PURE_DECLS \
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_RPC_WRAPPERS
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAHUDController(); \
 	friend FINALHUDTEST_API class UClass* Z_Construct_UClass_AHUDController(); \
@@ -25,7 +25,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_INCLASS \
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAHUDController(); \
 	friend FINALHUDTEST_API class UClass* Z_Construct_UClass_AHUDController(); \
@@ -35,7 +35,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_STANDARD_CONSTRUCTORS \
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AHUDController(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AHUDController) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_ENHANCED_CONSTRUCTORS \
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AHUDController(AHUDController&&); \
@@ -59,26 +59,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AHUDController); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AHUDController)
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_PRIVATE_PROPERTY_OFFSET
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_12_PROLOG
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_GENERATED_BODY_LEGACY \
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_PRIVATE_PROPERTY_OFFSET
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_13_PROLOG
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_PRIVATE_PROPERTY_OFFSET \
-	FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_RPC_WRAPPERS \
-	FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_INCLASS \
-	FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_STANDARD_CONSTRUCTORS \
+	FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_PRIVATE_PROPERTY_OFFSET \
+	FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_RPC_WRAPPERS \
+	FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_INCLASS \
+	FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_GENERATED_BODY \
+#define FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_PRIVATE_PROPERTY_OFFSET \
-	FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_INCLASS_NO_PURE_DECLS \
-	FinalHUDTest_Source_FinalHUDTest_HUDController_h_16_ENHANCED_CONSTRUCTORS \
+	FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_PRIVATE_PROPERTY_OFFSET \
+	FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_INCLASS_NO_PURE_DECLS \
+	FinalHUDTest_Source_FinalHUDTest_HUDController_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

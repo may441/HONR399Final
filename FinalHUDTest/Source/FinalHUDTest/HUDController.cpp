@@ -12,13 +12,19 @@ AHUDController::AHUDController()
 	DefaultMouseCursor = EMouseCursor::Crosshairs;
 }
 
+/*ALocalGovActor* AHUDController::returnLocalActor()
+{
+	return govActor;
+}*/
+
 void AHUDController::BeginPlay()
 {
+
 	if (TopLevel) // Check if the Asset is assigned in the blueprint.
 	{
 		// Create the widget and store it.
 		gameWidget = CreateWidget<UUserWidget>(this, TopLevel);
-
+//		govActor = SpawnActor<ALocalGovActor>();
 		// now you can use the widget directly since you have a referance for it.
 		// Extra check to  make sure the pointer holds the widget.
 		if (gameWidget)
@@ -31,3 +37,14 @@ void AHUDController::BeginPlay()
 		bShowMouseCursor = true;
 	}
 }
+/*
+template< class T >
+T* SpawnActor
+(
+	AActor* Owner = NULL,
+	APawn* Instigator = NULL,
+	bool bNoCollisionFail = false
+)
+{
+	return (T*)(GetWorld()->SpawnActor(T::StaticClass(), NAME_None, NULL, NULL, NULL, bNoCollisionFail, false, Owner, Instigator));
+}*/

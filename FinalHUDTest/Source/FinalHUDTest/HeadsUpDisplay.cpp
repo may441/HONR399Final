@@ -144,8 +144,9 @@ void AHeadsUpDisplay::UpdateCurrentVals(ALocalGovActor* localGovActions)
 	gainPenaltyVals.Init(0, 4);
 	tagUpdateVals.Init(0, 6);
 
-	localGovActions->localGovSendBlockingInfo(blockingVals, gainPenaltyVals);
-	localGovActions->localGovSendTagUpdate(tagUpdateVals);
+	blockingVals = localGovActions->localGovSendBlockingInfo();
+	gainPenaltyVals = localGovActions->localGovSendPenaltyInfo();
+	tagUpdateVals = localGovActions->localGovSendTagUpdate();
 
 	WorkforceEffectivenessPenalty = blockingVals[0];
 	PowerEffectivenessPenalty = blockingVals[1];

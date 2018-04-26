@@ -90,13 +90,29 @@ public:
 	void updateLocalGovPriorities(AHeadsUpDisplay* PlayerController);
 	
 	void localGovSendActionInfo(int* matchVal, char type);
-	void localGovSendBlockingInfo(TArray<float> blockingVals, TArray<float> gainPenaltyVals);
+
+	TArray<float> localGovSendBlockingInfo();
+
+	TArray<float> localGovSendPenaltyInfo();
 
 	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
-	void localGovSendTagUpdate(TArray<float> BoostVals);
+	TArray<float> localGovSendTagUpdate();
+
+	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
+	FString localGovReturnActionName(int category);
+
+	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
+	FString localGovReturnBlocking(int category);
+
+	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
+	FString localGovReturnGainPenalty(int category);
 
 	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
 	void printCurrentActions(AHeadsUpDisplay* PlayerController);
+
+	UFUNCTION(BlueprintCallable, Category = "Local Government Actions")
+	bool actionIsActive(int actionID);
+
 
 	TownAction peopleActions;
 	TownAction energyActions;
