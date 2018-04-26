@@ -2,9 +2,9 @@
   Compiling game modules for hot reload
   Performing 3 actions (4 in parallel)
   LocalGovActor.cpp
-  [2/3] Link UE4Editor-FinalHUDTest-1096.dll
-  [3/3] Link UE4Editor-FinalHUDTest-1096.lib
-     Creating library C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest-1096.lib and object C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest-1096.exp
-     Creating library C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest-1096.suppressed.lib and object C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest-1096.suppressed.exp
+  [2/3] Link UE4Editor-FinalHUDTest-6013.dll
+  [3/3] Link UE4Editor-FinalHUDTest-6013.lib
+     Creating library C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest-6013.lib and object C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest-6013.exp
+     Creating library C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest-6013.suppressed.lib and object C:\Users\Patrick May\Documents\Unreal Projects\HONR399Final\FinalHUDTest\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FinalHUDTest-6013.suppressed.exp
   Deploying FinalHUDTestEditor Win64 Development...
-  Total build time: 265.98 seconds (Local executor: 262.35 seconds)
+  Total build time: 8.70 seconds (Local executor: 7.13 seconds)

@@ -47,6 +47,7 @@ void ALocalGovActor::BeginPlay()
 	roadContractorsHired     =false;
 	aidRequested             =false;
 
+	updateLocalGovPriorities(NULL);
 }
 
 // Called every frame
@@ -450,24 +451,24 @@ FString ALocalGovActor::localGovReturnBlocking(int category)
 	{
 		returnVal += TEXT("Workforce\n");
 	}
-	else if (activeAction.moneyAffected == 'x' || activeAction.moneyAffected == 'X')
+	if (activeAction.moneyAffected == 'x' || activeAction.moneyAffected == 'X')
 	{
 		returnVal += TEXT("Money\n");
 	}
-	else if (activeAction.energyAffected == 'x' || activeAction.energyAffected == 'X')
+	if (activeAction.energyAffected == 'x' || activeAction.energyAffected == 'X')
 	{
 		returnVal += TEXT("Energy\n");
 	}
-	else if (activeAction.materialAffected == 'x' || activeAction.materialAffected == 'X')
+	if (activeAction.materialAffected == 'x' || activeAction.materialAffected == 'X')
 	{
 		returnVal += TEXT("Material\n");
 	}
-	else
+	if (returnVal == TEXT(""))
 	{
 		returnVal = TEXT("None");
 	}
 
-	return FString();
+	return returnVal;
 }
 
 FString ALocalGovActor::localGovReturnGainPenalty(int category)
@@ -496,30 +497,30 @@ FString ALocalGovActor::localGovReturnGainPenalty(int category)
 	{
 		returnVal += TEXT("Workforce\n");
 	}
-	else if (activeAction.moneyAffected == 'o' || activeAction.moneyAffected == 'O')
+	if (activeAction.moneyAffected == 'o' || activeAction.moneyAffected == 'O')
 	{
 		returnVal += TEXT("Money\n");
 	}
-	else if (activeAction.energyAffected == 'o' || activeAction.energyAffected == 'O')
+	if (activeAction.energyAffected == 'o' || activeAction.energyAffected == 'O')
 	{
 		returnVal += TEXT("Energy\n");
 	}
-	else if (activeAction.materialAffected == 'o' || activeAction.materialAffected == 'O')
+	if (activeAction.materialAffected == 'o' || activeAction.materialAffected == 'O')
 	{
 		returnVal += TEXT("Material\n");
 	}
-	else
+	if(returnVal == TEXT(""))
 	{
 		returnVal = TEXT("None");
 	}
 
-	return FString();
+	return returnVal;
 }
 
 void ALocalGovActor::printCurrentActions(AHeadsUpDisplay* PlayerController)
 {
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("People: %d Energy: %d Food/Water: %d EnviroAction: %d Infrastructure: %d"), peopleActions.actionID, energyActions.actionID, foodWaterActions.actionID, environmentActions.actionID, infrastructureActions.actionID));
+	//if (GEngine)
+	//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("People: %d Energy: %d Food/Water: %d EnviroAction: %d Infrastructure: %d"), peopleActions.actionID, energyActions.actionID, foodWaterActions.actionID, environmentActions.actionID, infrastructureActions.actionID));
 }
 
 bool ALocalGovActor::actionIsActive(int actionID)

@@ -221,9 +221,6 @@ public:
 		float CurrentHealthSafetyVal;
 
 
-
-
-
 	UPROPERTY(EditAnywhere, Category = "CheckPeople")
 		TArray<bool> PeopleCheck;
 
