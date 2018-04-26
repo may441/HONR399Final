@@ -21,6 +21,9 @@ AHeadsUpDisplay::AHeadsUpDisplay()
 		CurrentHealthSafetyVal = 0.0f;
 		CurrentPopulationVal = 0.0f;
 
+		// Boolean to track game state
+		FailedGame = false;
+
 		// Arrays to track what actions have been taken
 		PeopleCheck.Init(false, 9);
 		EnergyCheck.Init(false, 3);
@@ -108,6 +111,11 @@ float AHeadsUpDisplay::GetHealthSafetyVal()
 	return CurrentHealthSafetyVal;
 }
 
+bool AHeadsUpDisplay::GetFailState()
+{
+	return FailedGame;
+}
+
 
 void AHeadsUpDisplay::SetTaskActivity(int activityID, bool enable)
 {
@@ -168,6 +176,10 @@ void AHeadsUpDisplay::UpdateCurrentVals(ALocalGovActor* localGovActions)
 	if (WorkforceGainPenalty > 0 && ProjWorkforceVal > 0) { ProjWorkforceVal = ProjWorkforceVal * (1 - WorkforceGainPenalty); }
 	if (PowerGainPenalty > 0 && ProjPowerVal > 0) { ProjPowerVal = ProjPowerVal * (1 - PowerGainPenalty); }
 	if (MaterialGainPenalty > 0 && ProjMaterialVal > 0) { ProjMaterialVal = ProjMaterialVal * (1 - MaterialGainPenalty); }
+
+	if (CurrentWorkforceVal + ProjWorkforceVal < 0) {
+		FailedGame = true;
+	}
 
 	//Apply changes
 	CurrentCashVal = CurrentCashVal + ProjCashVal;
@@ -243,7 +255,6 @@ void AHeadsUpDisplay::UpdateProjectedValues()
 		if (InfCheck[i])
 			AddProjectedValues(infrastructureActions[i]);
 	}
-
 }
 
 void AHeadsUpDisplay::AddProjectedValues(PlayerAction actionRef)

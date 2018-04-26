@@ -151,6 +151,8 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Game State Access")
 		float GetHealthSafetyVal();
 
+	UFUNCTION(BlueprintPure, Category = "Game State Access")
+		bool GetFailState();
 
 	UFUNCTION(BlueprintCallable, Category = "Game State Access")
 	void SetTaskActivity(int activityID, bool enable);
@@ -219,6 +221,9 @@ public:
 		float CurrentEconomyVal;
 	UPROPERTY(EditAnywhere, Category = "TagVal")
 		float CurrentHealthSafetyVal;
+
+	UPROPERTY(EditAnywhere, Category = "FailState")
+		bool FailedGame;
 
 
 	UPROPERTY(EditAnywhere, Category = "CheckPeople")

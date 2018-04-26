@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentPowerVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentWorkforceVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetEconomyVal();
+	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetFailState();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetHealthSafetyVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetMoraleVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetPopulationVal();
@@ -45,6 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 			{ "GetCurrentPowerVal", (Native)&AHeadsUpDisplay::execGetCurrentPowerVal },
 			{ "GetCurrentWorkforceVal", (Native)&AHeadsUpDisplay::execGetCurrentWorkforceVal },
 			{ "GetEconomyVal", (Native)&AHeadsUpDisplay::execGetEconomyVal },
+			{ "GetFailState", (Native)&AHeadsUpDisplay::execGetFailState },
 			{ "GetHealthSafetyVal", (Native)&AHeadsUpDisplay::execGetHealthSafetyVal },
 			{ "GetMoraleVal", (Native)&AHeadsUpDisplay::execGetMoraleVal },
 			{ "GetPopulationVal", (Native)&AHeadsUpDisplay::execGetPopulationVal },
@@ -176,6 +178,31 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 			};
 #endif
 			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeadsUpDisplay, "GetEconomyVal", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(HeadsUpDisplay_eventGetEconomyVal_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetFailState()
+	{
+		struct HeadsUpDisplay_eventGetFailState_Parms
+		{
+			bool ReturnValue;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			auto NewProp_ReturnValue_SetBit = [](void* Obj){ ((HeadsUpDisplay_eventGetFailState_Parms*)Obj)->ReturnValue = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(HeadsUpDisplay_eventGetFailState_Parms), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_ReturnValue_SetBit)>::SetBit, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ReturnValue,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "Game State Access" },
+				{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeadsUpDisplay, "GetFailState", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x14020401, sizeof(HeadsUpDisplay_eventGetFailState_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
 		}
 		return ReturnFunction;
@@ -487,6 +514,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentPowerVal, "GetCurrentPowerVal" }, // 1021705637
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetCurrentWorkforceVal, "GetCurrentWorkforceVal" }, // 2504279909
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetEconomyVal, "GetEconomyVal" }, // 569727298
+				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetFailState, "GetFailState" }, // 4255782974
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetHealthSafetyVal, "GetHealthSafetyVal" }, // 4056195450
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetMoraleVal, "GetMoraleVal" }, // 2522576249
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetPopulationVal, "GetPopulationVal" }, // 1681457619
@@ -547,6 +575,14 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 #endif
 			static const UE4CodeGen_Private::FArrayPropertyParams NewProp_PeopleCheck = { UE4CodeGen_Private::EPropertyClass::Array, "PeopleCheck", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AHeadsUpDisplay, PeopleCheck), METADATA_PARAMS(NewProp_PeopleCheck_MetaData, ARRAY_COUNT(NewProp_PeopleCheck_MetaData)) };
 			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_PeopleCheck_Inner = { UE4CodeGen_Private::EPropertyClass::Bool, "PeopleCheck", RF_Public|RF_Transient|RF_MarkAsNative, 0x0000000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FailedGame_MetaData[] = {
+				{ "Category", "FailState" },
+				{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+			};
+#endif
+			auto NewProp_FailedGame_SetBit = [](void* Obj){ ((AHeadsUpDisplay*)Obj)->FailedGame = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_FailedGame = { UE4CodeGen_Private::EPropertyClass::Bool, "FailedGame", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AHeadsUpDisplay), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_FailedGame_SetBit)>::SetBit, METADATA_PARAMS(NewProp_FailedGame_MetaData, ARRAY_COUNT(NewProp_FailedGame_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentHealthSafetyVal_MetaData[] = {
 				{ "Category", "TagVal" },
@@ -740,6 +776,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_EnergyCheck_Inner,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PeopleCheck,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PeopleCheck_Inner,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FailedGame,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CurrentHealthSafetyVal,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CurrentEconomyVal,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CurrentPopulationVal,
@@ -785,7 +822,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHeadsUpDisplay, 3664033366);
+	IMPLEMENT_CLASS(AHeadsUpDisplay, 3909431027);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AHeadsUpDisplay(Z_Construct_UClass_AHeadsUpDisplay, &AHeadsUpDisplay::StaticClass, TEXT("/Script/FinalHUDTest"), TEXT("AHeadsUpDisplay"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AHeadsUpDisplay);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -52,6 +52,14 @@ class ALocalGovActor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetFailState) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->GetFailState(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetHealthSafetyVal) \
 	{ \
 		P_FINISH; \
@@ -192,6 +200,14 @@ class ALocalGovActor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->SetTaskActivity(Z_Param_activityID,Z_Param_enable); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetFailState) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->GetFailState(); \
 		P_NATIVE_END; \
 	} \
  \

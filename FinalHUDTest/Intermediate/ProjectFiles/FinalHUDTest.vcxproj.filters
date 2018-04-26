@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<None Include="..\..\FinalHUDTest.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{A2B569D2-AE92-43E1-8106-0CDDBFC2B190}</UniqueIdentifier>
+			<UniqueIdentifier>{660170B8-58CD-4D0A-AC31-8ED14A3541A2}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FinalHUDTest.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{1E2F7E5F-878F-48BE-A16E-04DE65551ED6}</UniqueIdentifier>
+			<UniqueIdentifier>{EBF5778E-D0C0-41C3-BA5A-9D2AAA4D8324}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,7 +25,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\FinalHUDTest">
-			<UniqueIdentifier>{2F6E3D32-386E-43AF-9632-1A500046D923}</UniqueIdentifier>
+			<UniqueIdentifier>{EE4BFD92-836F-401E-B245-A8379E594933}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FinalHUDTest\FinalHUDTest.Build.cs">
 			<Filter>Source\FinalHUDTest</Filter>
