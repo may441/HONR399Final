@@ -32,6 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetProjectedWorkforceVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetRoadsVal();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_GetTaskIDStatus();
+	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_printDiagVals();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_SetTaskActivity();
 	FINALHUDTEST_API UFunction* Z_Construct_UFunction_AHeadsUpDisplay_UpdateCurrentVals();
 	FINALHUDTEST_API UClass* Z_Construct_UClass_ALocalGovActor_NoRegister();
@@ -56,6 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 			{ "GetProjectedWorkforceVal", (Native)&AHeadsUpDisplay::execGetProjectedWorkforceVal },
 			{ "GetRoadsVal", (Native)&AHeadsUpDisplay::execGetRoadsVal },
 			{ "GetTaskIDStatus", (Native)&AHeadsUpDisplay::execGetTaskIDStatus },
+			{ "printDiagVals", (Native)&AHeadsUpDisplay::execprintDiagVals },
 			{ "SetTaskActivity", (Native)&AHeadsUpDisplay::execSetTaskActivity },
 			{ "UpdateCurrentVals", (Native)&AHeadsUpDisplay::execUpdateCurrentVals },
 			{ "UpdateProjectedValues", (Native)&AHeadsUpDisplay::execUpdateProjectedValues },
@@ -427,6 +429,22 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_printDiagVals()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "Game State Access" },
+				{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeadsUpDisplay, "printDiagVals", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AHeadsUpDisplay_SetTaskActivity()
 	{
 		struct HeadsUpDisplay_eventSetTaskActivity_Parms
@@ -524,6 +542,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetProjectedWorkforceVal, "GetProjectedWorkforceVal" }, // 4257607903
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetRoadsVal, "GetRoadsVal" }, // 694943574
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_GetTaskIDStatus, "GetTaskIDStatus" }, // 1086480555
+				{ &Z_Construct_UFunction_AHeadsUpDisplay_printDiagVals, "printDiagVals" }, // 2297158980
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_SetTaskActivity, "SetTaskActivity" }, // 4134828790
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_UpdateCurrentVals, "UpdateCurrentVals" }, // 3627489439
 				{ &Z_Construct_UFunction_AHeadsUpDisplay_UpdateProjectedValues, "UpdateProjectedValues" }, // 1907302415
@@ -822,7 +841,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHeadsUpDisplay, 3909431027);
+	IMPLEMENT_CLASS(AHeadsUpDisplay, 627708941);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AHeadsUpDisplay(Z_Construct_UClass_AHeadsUpDisplay, &AHeadsUpDisplay::StaticClass, TEXT("/Script/FinalHUDTest"), TEXT("AHeadsUpDisplay"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AHeadsUpDisplay);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

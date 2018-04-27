@@ -43,7 +43,7 @@ AHeadsUpDisplay::AHeadsUpDisplay()
 		ProjHealthSafetyVal = 0;
 		ProjPopulationVal = 0;
 
-		
+		turnNo = 0;
 }
 
 float AHeadsUpDisplay::GetCurrentCashVal()
@@ -207,8 +207,9 @@ void AHeadsUpDisplay::UpdateCurrentVals(ALocalGovActor* localGovActions)
 
 	//Prepare Local Government actions for next action
 	localGovActions->updateLocalGovPriorities(this);
-
+	turnNo += 1;
 	UpdateProjectedValues();
+	printDiagVals();
 }
 
 void AHeadsUpDisplay::UpdateProjectedValues()
@@ -286,6 +287,11 @@ void AHeadsUpDisplay::AddProjectedValues(PlayerAction actionRef)
 	ProjPowerVal = ProjPowerVal + actionRef.energyAffected * modifier;
 	ProjCashVal = ProjCashVal + actionRef.moneyAffected * modifier;
 	ProjMaterialVal = ProjMaterialVal + actionRef.materialAffected * modifier;
+}
+
+void AHeadsUpDisplay::printDiagVals()
+{
+	UE_LOG(LogTemp, Display, TEXT("Turn: %d Workforce: %f Energy: %f Money: %f Material: %f Morale: %f Roads: %f Population: %f Economics: %f Health: %f"), turnNo, CurrentWorkforceVal, CurrentPowerVal, CurrentCashVal, CurrentMaterialVal, CurrentMoraleVal, CurrentRoadVal, CurrentPopulationVal, CurrentEconomyVal, CurrentHealthSafetyVal);
 }
 
 bool AHeadsUpDisplay::GetTaskIDStatus(int taskID)

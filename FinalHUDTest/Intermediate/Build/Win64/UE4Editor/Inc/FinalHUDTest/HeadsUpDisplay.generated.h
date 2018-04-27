@@ -156,6 +156,14 @@ class ALocalGovActor;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execprintDiagVals) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->printDiagVals(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetCurrentCashVal) \
 	{ \
 		P_FINISH; \
@@ -304,6 +312,14 @@ class ALocalGovActor;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(float*)Z_Param__Result=this->GetCurrentPowerVal(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execprintDiagVals) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->printDiagVals(); \
 		P_NATIVE_END; \
 	} \
  \

@@ -114,6 +114,7 @@ public:
 	bool actionIsActive(int actionID);
 
 
+
 	TownAction peopleActions;
 	TownAction energyActions;
 	TownAction foodWaterActions;

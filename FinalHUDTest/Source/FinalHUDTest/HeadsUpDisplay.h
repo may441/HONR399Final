@@ -119,6 +119,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Game State Access")
 	float GetCurrentCashVal();
 
+	UFUNCTION(BlueprintCallable, Category = "Game State Access")
+	void printDiagVals();
+
 	UFUNCTION(BlueprintPure, Category = "Game State Access")
 	float GetCurrentPowerVal();
 
@@ -249,6 +252,7 @@ public:
 	
 		void AddProjectedValues(PlayerAction actionRef);
 
+		int turnNo;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -259,5 +263,5 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
+
 };
